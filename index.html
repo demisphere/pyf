@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Yourself First</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Roboto Flex", 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#389400', 
+                        'brand-dark': '#1c1c1c',
+                        'footer-bg': '#1f2022',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom styles for sticky header transition */
+         .sticky-header { transition: transform 0.3s ease-in-out; }
+        .header-hidden { transform: translateY(-100%); }
+        
+    </style>
+
+    <script src="https://cdn.pagesense.io/js/payyourselffirst/c2e5673c7d15457d8a0925080101f545.js"></script>
+
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+   <div id="main-header" class="fixed top-0 left-0 w-full z-50 sticky-header shadow-md">
+        <div class="bg-brand-dark text-white py-6 text-xs font-semibold">
+            <div class="container mx-auto px-4 flex justify-end items-center space-x-6">
+                <a href="https://payyourselffirst.benefithub.com/Welcome" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <div class="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center text-white mr-2 text-[10px]"><i class="fas fa-dollar-sign"></i></div> DISCOUNT PORTAL
+                </a>
+                <a href="https://backoffice.pyfaffiliates.com/merchants/login.php#login" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <i class="fas fa-user text-brand-primary mr-2"></i> AFFILIATE LOGIN
+                </a>
+            </div>
+        </div>
+        <nav class="bg-white py-4">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="index.html"><img src="pyf-logo.svg" alt="Pay Yourself First Logo" class="h-12 object-contain"></a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none"><i class="fas fa-bars"></i></button>
+                <div class="hidden lg:flex items-center space-x-5 text-xs xl:text-sm font-bold text-gray-700 uppercase">
+                    <a href="#" class="text-brand-primary transition">Home</a>
+                    <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                    <a href="business-support-package.html" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white px-4 py-3 rounded shadow-md hover:shadow-lg hover:opacity-90 transition whitespace-nowrap"> Business Support Package</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden text-sm bg-white border-t mt-4 p-4 flex flex-col space-y-4 font-bold text-gray-700 uppercase">
+                 <a href="#" class="text-brand-primary transition">Home</a>
+                   <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                <a href="Business Support Package" class="bg-brand-primary text-white text-center py-3 rounded">Business Support Package</a>
+            </div>
+        </nav>
+    </div>
+
+    <header class="container mx-auto px-4 mb-16 mt-48 h-full">
+        <div class="relative rounded-[2rem] overflow-hidden h-[500px] md:h-[750px] shadow-2xl group">
+            <img src="Homepage/Home Page Hero_2.jpg" 
+                 alt="Couple Relaxing" 
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 md:px-20">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 uppercase leading-relaxed drop-shadow-md">
+                    Stop Overpaying Your Taxes. <br class="hidden md:block" /> Increase Your Cash Flow.<br class="hidden md:block" /> 
+                    Save More Money.
+                </h1>
+                
+                <p class="text-base md:text-xl text-gray-100 mb-12 max-w-4xl font-normal leading-relaxed">
+                    Pay Yourself First helps you take control of your financial future by helping you to access legitimate tax deductions, save money and build an income independent of an employer if you choose to.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="packages.html" target="_blank" class="bg-gradient-to-r from-[#E0FFCC] to-[#F2FFEB] text-brand-primary font-extrabold py-4 px-10 rounded shadow hover:shadow-lg transition uppercase text-sm tracking-wide">
+                        View Service Packages
+                    </a>
+                    
+                    <a href="affiliate-plan.html" target="_blank" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white font-bold py-4 px-10 rounded shadow hover:shadow-lg transition uppercase text-sm tracking-wide">
+                        View Affiliate Program
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+   <main class="flex-grow">
+
+
+<section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            
+            <h2 class="text-2xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                Three Ways to Take <span class="text-brand-primary">Control</span> of Your <span class="text-brand-primary">Money</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                
+                <div class="bg-[#F2FFEB] p-10 rounded-3xl text-center shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl shadow-lg">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Save Money</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Access millions of discounts on products and services you already buy.
+                    </p>
+                </div>
+
+                <div class="bg-[#F2FFEB] p-10 rounded-3xl text-center shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl shadow-lg">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Reduce Taxes</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Leverage business deductions to keep more of what you earn—with professional CPA level support.
+                    </p>
+                </div>
+
+                <div class="bg-brand-primary p-10 rounded-3xl text-center shadow-xl transform md:-translate-y-2">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-brand-primary text-3xl shadow-lg">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Build Income</h3>
+                    <p class="text-white text-opacity-90 text-sm leading-relaxed">
+                        As an affiliate you can create a residual revenue stream on your own schedule, independent of an employer. It is free and optional to be a PYF affiliate. There are no upfront or ongoing qualifications to be an affiliate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center max-w-4xl mx-auto">
+                <p class="text-gray-700 font-medium text-lg mb-10 leading-relaxed">
+                    Whether you want one, two, or all three—Pay Yourself First has an option designed for your goals. Most people serious about tax savings, financial literacy, and entrepreneurship choose Business Support Package.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="packages.html" target="_blank" class="bg-gradient-to-r from-[#E0FFCC] to-[#F2FFEB] text-brand-primary font-extrabold py-3 px-8 rounded shadow hover:shadow-lg transition uppercase text-xs tracking-wider">
+                        View Service Packages
+                    </a>
+                    <a href="affiliate-plan.html" target="_blank" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white font-bold py-3 px-8 rounded shadow hover:shadow-lg transition uppercase text-xs tracking-wider">
+                       View Affiliate Program
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            
+            <h2 class="text-2xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                There Are <span class="text-brand-primary">Two</span> Tax Systems. Which One Are <span class="text-brand-primary">You</span> In?
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                
+                <div>
+                    <p class="text-gray-600 mb-8 text-base leading-relaxed">
+                        Many work hard yet still fall behind financially. With rising costs and stagnant wages, the financial squeeze is real. The solution? Most overlook the legitimate, government-approved tax deductions that can dramatically improve your finances.
+                    </p>
+
+                    <h4 class="font-bold text-gray-900 text-lg mb-6">If any of these perks sound attractive, you're not alone:</h4>
+
+                    <ul class="space-y-5 mb-10">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-primary flex items-center justify-center text-white text-xs mt-1 mr-4">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm font-medium">Imagine keeping $3,000-$10,000 more annually by accessing tax deductions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-primary flex items-center justify-center text-white text-xs mt-1 mr-4">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm font-medium">Building income through our affiliate program</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-primary flex items-center justify-center text-white text-xs mt-1 mr-4">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm font-medium">Envision having professional support without the professional price tag</span>
+                        </li>
+                    </ul>
+
+                    <a href="" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white font-bold py-4 px-10 rounded shadow-md hover:shadow-lg transition uppercase text-sm inline-block">
+                        Get Business Support Package
+                    </a>
+                </div>
+
+                <div class="relative">
+                    <img src="Homepage/Two Tax Systems.jpg" 
+                         alt="Consultation Meeting" 
+                         class="rounded-[2rem] shadow-xl w-full object-cover h-[500px]">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                
+                <div class="relative order-2 lg:order-1">
+                    <img src="Homepage/Financial Peace of Mind.jpg" 
+                         alt="Money in Pocket" 
+                         class="rounded-[2rem] shadow-xl w-full object-cover h-[450px]">
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark uppercase mb-6 leading-tight">
+                        Lower <span class="text-brand-primary">Taxes</span>, Higher <span class="text-brand-primary">Cash</span> Flow, And Increased <span class="text-brand-primary">Financial Peace Of Mind.</span>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-8 text-base leading-relaxed">
+                        Business Support Package combines tax support, legal services, entrepreneurship training, and more—in one comprehensive plan.
+                    </p>
+
+                    <h4 class="font-bold text-gray-900 text-lg mb-6">Key Advantages</h4>
+
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4"></i>
+                            <span class="text-gray-700 text-sm font-medium leading-relaxed">
+                                Leverage business tax deductions. Including expenses you currently have.
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4"></i>
+                            <span class="text-gray-700 text-sm font-medium leading-relaxed">
+                                Get tax, legal, and business guidance when you need it.
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4"></i>
+                            <span class="text-gray-700 text-sm font-medium leading-relaxed">
+                                Educational resources and support tools for entrepreneurs.
+                            </span>
+                        </li>
+                    </ul>
+
+                    <a href="" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white font-bold py-4 px-10 rounded shadow-md hover:shadow-lg transition uppercase text-sm inline-block tracking-wide">
+                        Get Business Support Package
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            
+            <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6">
+                Support You Can <span class="text-brand-primary">Count</span> On
+            </h2>
+            <p class="text-gray-600 max-w-5xl mx-auto mb-16 text-sm md:text-base">
+                Professional support is included with Business Support Package - tax guidance, legal services, business coaching, and discount access.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-[#efffe0] p-8 rounded-2xl flex flex-col items-center hover:shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mb-6 text-white text-2xl shadow-sm">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Tax Support</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Guidance from experienced tax professionals
+                    </p>
+                </div>
+
+                <div class="bg-[#efffe0] p-8 rounded-2xl flex flex-col items-center hover:shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mb-6 text-white text-2xl shadow-sm">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Legal Support</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Help with business and personal legal matters
+                    </p>
+                </div>
+
+                <div class="bg-[#efffe0] p-8 rounded-2xl flex flex-col items-center hover:shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mb-6 text-white text-2xl shadow-sm">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Business Support</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Tools, training, and coaching for growth
+                    </p>
+                </div>
+
+                <div class="bg-[#efffe0] p-8 rounded-2xl flex flex-col items-center hover:shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mb-6 text-white text-2xl shadow-sm">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Discount Platform</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Savings on everyday essentials
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <section class="py-16 bg-[#efffe0] text-center text-white items-center justify-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl text-[#0D3500] font-extrabold uppercase mb-4 tracking-wide">
+                Serving People Since 2011
+            </h2>
+            <p class="text-[#222222] text-opacity-90 max-w-2xl mx-auto mb-8 text-lg font-medium">
+               For over a decade, Pay Yourself First has helped W-2 employees,
+independent contractors, and entrepreneurs legally reduce their tax liability, cut
+expenses, and build an additional income stream.
+            </p>
+
+            <p class="text-brand-primary text-opacity-90 max-w-2xl mx-auto text-xl font-semibold">
+                All backed by our 30-Day Money-Back Guarantee.
+            </p>
+            
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white relative group">
+        <div class="container mx-auto px-4">
+            
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center uppercase mb-12 text-brand-dark">
+                Real People. <span class="text-brand-primary">Real Results.</span>
+            </h2>
+
+            <div class="relative max-w-6xl mx-auto">
+                
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 bg-white text-brand-primary hover:bg-brand-primary hover:text-white border-2 border-brand-primary w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all opacity-0 pointer-events-none" onclick="scrollSlider(-1)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 bg-brand-primary text-white hover:bg-[#75C400] w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all" onclick="scrollSlider(1)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <div id="sliderContainer" class="flex space-x-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+                    
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
+                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
+                            "This program helped me keep more of what I earn. I never realized how much I was overpaying."
+                        </p>
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
+                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
+                            "I finally understand how to use tax deductions the right way. The support team is incredible."
+                        </p>
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
+                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
+                            "The business coaching alone was worth the investment. My side income has doubled in 6 months."
+                        </p>
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
+                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
+                            "A complete game changer for my family's finances. We are finally saving for our future."
+                        </p>
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
+                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
+                            "Legal support gave me peace of mind when setting up my LLC. Highly recommended!"
+                        </p>
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
+                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
+                            "The discount platform saves me about $200 a month on things I was buying anyway."
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const slider = document.getElementById('sliderContainer');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            // Scroll Function
+            function scrollSlider(direction) {
+                const cardWidth = slider.firstElementChild.offsetWidth + 24; // Width + Gap
+                slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+            }
+
+            // Arrow Visibility Logic
+            function updateArrows() {
+                const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+                
+                // Toggle Left Arrow
+                if (slider.scrollLeft > 10) {
+                    prevBtn.classList.remove('opacity-0', 'pointer-events-none');
+                } else {
+                    prevBtn.classList.add('opacity-0', 'pointer-events-none');
+                }
+
+                // Toggle Right Arrow
+                if (slider.scrollLeft >= maxScrollLeft - 10) {
+                    nextBtn.classList.add('opacity-0', 'pointer-events-none');
+                } else {
+                    nextBtn.classList.remove('opacity-0', 'pointer-events-none');
+                }
+            }
+
+            // Listen for scroll events
+            slider.addEventListener('scroll', updateArrows);
+            
+            // Initial Check
+            window.addEventListener('load', updateArrows);
+            window.addEventListener('resize', updateArrows);
+        </script>
+    </section>
+
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center mb-16 max-w-4xl mx-auto">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6 leading-tight">
+                    Save Money. Make Money. Or Both.<br>
+                    <span class="text-brand-primary">Which Package Is Right For You?</span>
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                    Business Support Package is our most popular package because it combines tax savings guidance, entrepreneurship training and support, discounts, and professional support in one comprehensive system. But we also offer alternative Packages based on your specific goals.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20 items-stretch">
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+                    <div class="bg-brand-primary py-4 px-8">
+                        <h3 class="text-white font-bold text-xl uppercase tracking-wide">Affiliate Program</h3>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <p class="text-gray-600 text-sm leading-7 mb-8">
+                            It is free to become a PYF Affiliate. There is no cost and no upfront or ongoing requirements or qualifications. As a PYF affiliate you can receive referral fees when you share PYF products with others. If a product is paid on a one-time basis you will be paid a one-time referral fee. If a product is paid on a monthly basis you will be paid a monthly referral fee. You can become a PYF affiliate without purchasing a PYF product or in combination with any PYF product.
+                        </p>
+                        <div>
+                            <a href="affiliate-plan.html" target="_blank" class="bg-brand-primary text-white font-bold py-3 px-8 rounded shadow hover:bg-[#75C400] transition uppercase text-xs tracking-wider inline-block">
+                               View Affiliate Program
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[360px] min-h-[300px]">
+                    <img src="Homepage/Affiliate Program.jpg" 
+                         alt="Happy Family" 
+                         class="w-full h-full object-cover rounded-xl shadow-lg">
+                </div>
+            </div>
+
+            <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                <div class="bg-brand-primary py-5 text-center">
+                    <h3 class="text-white font-extrabold text-2xl uppercase tracking-wider">Service Packages</h3>
+                </div>
+
+                <div class="bg-white p-6 md:p-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <div class="bg-[#F2FFEB] p-8 rounded-lg flex flex-col h-full hover:shadow-md transition">
+                            <h4 class="font-bold text-xl text-gray-900 mb-3">Business Support Package</h4>
+                            <p class="text-gray-600 text-sm mb-6 flex-grow">
+                                The ultimate package for tax savings, business growth, and financial independence. Includes all features.
+                            </p>
+                            <a href="business-support-package.html" target="_blank" class="bg-brand-primary text-white font-bold py-3 px-6 rounded text-center text-xs uppercase hover:bg-[#75C400] transition shadow-sm">
+                                Get Business Support Package
+                            </a>
+                        </div>
+
+                        <div class="bg-[#F2FFEB] p-8 rounded-lg flex flex-col h-full hover:shadow-md transition">
+                            <h4 class="font-bold text-xl text-gray-900 mb-3">Doctor Power</h4>
+                            <p class="text-gray-600 text-sm mb-6 flex-grow">
+                                Convenient telehealth and wellness savings for families. Access doctors 24/7 without high costs.
+                            </p>
+                            <a href="doctor-power.html" target="_blank" class="bg-brand-primary text-white font-bold py-3 px-6 rounded text-center text-xs uppercase hover:bg-[#75C400] transition shadow-sm">
+                                Get Doctor Power
+                            </a>
+                        </div>
+
+                        <div class="bg-[#F2FFEB] p-8 rounded-lg flex flex-col h-full hover:shadow-md transition">
+                            <h4 class="font-bold text-xl text-gray-900 mb-3">Dental Power</h4>
+                            <p class="text-gray-600 text-sm mb-6 flex-grow">
+                                Lower dental, vision, and hearing care costs. Keep your family's smile bright for less.
+                            </p>
+                            <a href="dental-power.html" target="_blank" class="bg-brand-primary text-white font-bold py-3 px-6 rounded text-center text-xs uppercase hover:bg-[#75C400] transition shadow-sm">
+                                Get Dental Power
+                            </a>
+                        </div>
+
+                        <div class="bg-[#F2FFEB] p-8 rounded-lg flex flex-col h-full hover:shadow-md transition">
+                            <h4 class="font-bold text-xl text-gray-900 mb-3">Purchase Power</h4>
+                            <p class="text-gray-600 text-sm mb-6 flex-grow">
+                                Save money on shopping, dining, entertainment, and more. Everyday discounts that add up fast.
+                            </p>
+                            <a href="purchase-power.html" target="_blank" class="bg-brand-primary text-white font-bold py-3 px-6 rounded text-center text-xs uppercase hover:bg-[#75C400] transition shadow-sm">
+                                Get Purchase Power
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+          
+
+        </div>
+    </section>
+
+
+<section class="py-20 bg-[#F2FFEB]">
+        <div class="container mx-auto px-4 text-center">
+            
+            <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6 leading-tight">
+                Don't Overpay Your Taxes. Keep <span class="text-brand-primary">More</span> Of Your
+                <span class="text-brand-primary">Earnings</span>. <br> Save More <span class="text-brand-primary">Money</span>.
+            </h2>
+
+            <p class="text-gray-700 font-medium text-lg mb-10 max-w-6xl mx-auto">
+                Get the PYF Business Support Package and start keeping more of
+what you earn while building additional income if you choose to.
+            </p>
+
+            <div class="mb-16">
+                <a href="business-support-package.html" target="_blank" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white font-bold py-4 px-12 rounded shadow-lg hover:shadow-xl hover:opacity-95 transition uppercase text-sm tracking-wide inline-block">
+                   Get Business Support Package
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <div class="bg-[#dcfce7] border border-[#bbf7d0] py-6 px-4 rounded-xl flex items-center justify-center space-x-4 shadow-sm">
+                    <i class="fas fa-check-circle text-3xl text-brand-primary"></i>
+                    <span class="text-brand-dark font-bold text-sm text-left">30-Day Money-Back Guarantee</span>
+                </div>
+
+                <div class="bg-[#dcfce7] border border-[#bbf7d0] py-6 px-4 rounded-xl flex items-center justify-center space-x-4 shadow-sm">
+                    <i class="fas fa-user-tie text-3xl text-brand-primary"></i>
+                    <span class="text-brand-dark font-bold text-sm text-left">Professional CPA Support Included</span>
+                </div>
+
+                <div class="bg-[#dcfce7] border border-[#bbf7d0] py-6 px-4 rounded-xl flex items-center justify-center space-x-4 shadow-sm">
+                    <i class="fas fa-file-contract text-3xl text-brand-primary"></i>
+                    <span class="text-brand-dark font-bold text-sm text-left">No Long Term Contract</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    </main>
+
+
+
+
+
+    <footer class="relative bg-footer-bg text-white pt-16 pb-6 border-t-4 border-brand-primary">
+        <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+            <img src="Homepage/Footer_general.jpg" class="w-full h-full object-cover grayscale">
+        </div>
+
+        <div class="relative container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Find Us</h3>
+                    <ul class="space-y-6">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-primary text-xl mr-4 w-6"></i>
+                            <span class="text-gray-300 text-sm">+1 (855) 793-2582</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-primary text-xl mr-4 w-6"></i>
+                            <a href="mailto:Service@PayYourselfFirst.com" class="text-gray-300 text-sm hover:text-brand-primary transition">info@payyourselffirst.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Legal</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="terms.html" class="hover:text-brand-primary transition" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-primary transition" target="_blank" >Privacy Policy</a></li>
+                        <li><a href="cookie.html" class="hover:text-brand-primary transition" target="_blank" >Cookie Policy</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-brand-primary transition" target="_blank" >Disclaimer</a></li>
+                        <li><a href="use-policy.html" class="hover:text-brand-primary transition" target="_blank" >Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Quick Links</h3>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                        <li><a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="hover:text-brand-primary transition" target="_blank"> Become an Affiliate</a></li>
+                        <li><a href="packages.html" class="hover:text-brand-primary transition" target="_blank" >Join Now</a></li>
+                        <li><a href="contact-us.html" class="hover:text-brand-primary transition" target="_blank" >Contact Us</a></li>
+                    </ul>
+                    
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/share/1SgQW8W1qQ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/pyfinc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pay_yourself_first_inc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/pay-yourself-first-inc/about/?viewAsMember=true" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p class="mb-2 md:mb-0">Copyright © 2025 - <span class="text-brand-primary">Pay Yourself First</span>. All Rights Reserved.</p>
+                <p>Powered By <span class="text-brand-primary">SapphireLead</span> © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Logic
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) { header.classList.add('header-hidden'); } 
+            else { header.classList.remove('header-hidden'); }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+
+    <button id="backToTopBtn" 
+            onclick="scrollToTop()" 
+            class="fixed bottom-8 right-8 z-50 bg-brand-primary hover:bg-[#2d7a00] text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show/Hide logic based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show after scrolling down 300px
+                backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
