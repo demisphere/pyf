@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Yourself First - Packages</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                       sans: ["Roboto Flex", 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#389400', 
+                        'brand-dark': '#1c1c1c',
+                        'footer-bg': '#1f2022',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://cdn.pagesense.io/js/payyourselffirst/c2e5673c7d15457d8a0925080101f545.js"></script>
+
+    <style>
+        /* Custom styles for sticky header transition */
+         .sticky-header { transition: transform 0.3s ease-in-out; }
+        .header-hidden { transform: translateY(-100%); }
+        
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+   <div id="main-header" class="fixed top-0 left-0 w-full z-50 sticky-header shadow-md">
+        <div class="bg-brand-dark text-white py-6 text-xs font-semibold">
+            <div class="container mx-auto px-4 flex justify-end items-center space-x-6">
+                <a href="#" class="flex items-center hover:text-brand-primary transition">
+                    <div class="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center text-white mr-2 text-[10px]"><i class="fas fa-dollar-sign"></i></div> DISCOUNT PORTAL
+                </a>
+                <a href="#" class="flex items-center hover:text-brand-primary transition">
+                    <i class="fas fa-user text-brand-primary mr-2"></i> AFFILIATE LOGIN
+                </a>
+            </div>
+        </div>
+        <nav class="bg-white py-4">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="index.html"><img src="pyf-logo.svg" alt="Pay Yourself First Logo" class="h-12 object-contain"></a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none"><i class="fas fa-bars"></i></button>
+                <div class="hidden lg:flex items-center space-x-5 text-xs xl:text-sm font-bold text-gray-700 uppercase">
+                    <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                    <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                    <a href="business-support-package.html" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white px-4 py-3 rounded shadow-md hover:shadow-lg hover:opacity-90 transition whitespace-nowrap"> Business Support Package</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden text-sm bg-white border-t mt-4 p-4 flex flex-col space-y-4 font-bold text-gray-700 uppercase">
+                 <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                   <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                <a href="business-support-package.html" class="bg-brand-primary text-white text-center py-3 rounded"> Business Support Package</a>
+            </div>
+        </nav>
+    </div>
+
+
+<header class="container mx-auto px-4 mb-16 mt-48">
+        <div class="relative rounded-[2rem] overflow-hidden h-[500px] md:h-[600px] shadow-2xl group">
+            
+            <img src="Dental-power-page/Dental Power_Hero.jpg" 
+                 alt="Smiling Family" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-2 md:px-12">
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase leading-tight drop-shadow-md">
+                    Dental, Vision, and Hearing Savings For Your Household
+                </h1>
+                
+                <p class="text-base md:text-xl text-gray-100 mb-8 font-medium leading-relaxed max-w-5xl">
+                    Dental savings, vision care discounts, hearing services, and prescription savings.
+                </p>
+
+                <div class=" border-2 border-white rounded px-6 py-2 text-white font-bold text-lg mb-8 bg-white/10 backdrop-blur-sm">
+                    PRICE: $16.95/month
+                </div>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+                    <a href="https://buy.stripe.com/8x25kwgb80Gjgyg3hKcIE05" target="_blank" class="bg-[#4a8a0a] text-white font-bold py-4 px-10 rounded shadow hover:bg-[#389400] transition uppercase text-sm tracking-wide text-center">
+                        Get Dental Power
+                    </a>
+                    
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <div class="text-center max-w-7xl mx-auto mb-16">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6 leading-tight">
+                        Essential Savings For <span class="text-brand-primary">Dental, Vision, Hearing & Prescriptions</span>
+                    </h2>
+                    <p class="text-gray-600 font-medium text-sm md:text-base">
+                       A dental and health savings package, combining dental network access, vision care, hearing services, and prescription discounts.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-start max-w-7xl mx-auto">
+                    
+                    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full">
+                        <div class="bg-[#4a8a0a] p-4 text-center h-16 flex items-center justify-center">
+                            <h3 class="text-white font-bold text-sm uppercase">Dental Network Savings</h3>
+                        </div>
+                        <div class="p-6 text-xs text-gray-700 leading-relaxed flex-grow text-justify">
+
+                            <img src="Dental-power-page/Dental Network Savings_DentalPower_card.jpg" alt="" class="mb-4 rounded-lg shadow-md">
+
+                            <p class="mb-4">
+                                Pay Yourself First offers our dental plan through Careington International Corporation. They have one of the most recognized professional dental networks in the nation and boasts a provider network of over 70,000 dental access points.
+                            </p>
+                            
+                            <div id="card1-more" class="hidden mt-2">
+
+                                <p class="mb-4">  As a member, you can take advantage of savings offered by an industry leader in discount dental care.</p>
+
+                                <h4 class="font-bold text-brand-primary text-xs uppercase mb-2">What’s included:</h4>
+                                <ul class="space-y-3 text-xs text-left">
+                                    <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-2"></i> Save 20% to 60% on most dental procedures including routine oral exams, unlimited cleanings, and major work such as dentures, root canals, and crowns.</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-2"></i> 20% savings on orthodontics including braces and retainers for children and adults</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-2"></i> 20% reduction on specialist's normal fees. Specialties include: Endodontics, Oral Surgery, Pediatric Dentistry, Periodontics, and Prosthodontics where available</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-2"></i> Cosmetic dentistry such as bonding and veneers also included</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-2"></i> All dentists must meet highly selective credentialing standards based on education, background, license standing and other requirements.</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-2"></i> You may visit any participating dentist on the plan and change providers at any time.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 mt-auto">
+                            <button onclick="toggleCard('card1')" id="btn-card1" class="w-full border border-gray-300 rounded-lg py-3 text-gray-600 font-bold text-xs uppercase hover:bg-white hover:text-brand-primary transition flex items-center justify-center">
+                                <span>Expand</span> <i class="fas fa-chevron-down ml-2 transform transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full">
+                        <div class="bg-[#4a8a0a] p-4 text-center h-16 flex items-center justify-center">
+                            <h3 class="text-white font-bold text-sm uppercase">Vision Program</h3>
+                        </div>
+                        <div class="p-6 text-sm text-gray-700 leading-relaxed flex-grow text-justify">
+
+                             <img src="Dental-power-page/Vision Program_DentalPower_card.jpg" alt="" class="mb-4 rounded-lg shadow-md">
+                            <p class="mb-4">
+                                VSP® Vision Savings Pass is a discount vision program that offers savings on eye care and eyewear. With the best choices in eyewear, VSP makes it easy to find the perfect frame. Members can choose from great brands like Anne Klein, bebe®, Calvin Klein, Flexon®, Lacoste, Nike, Nine West, and more.
+                            </p>
+
+                            <div id="card2-more" class="hidden mt-4">
+                                <h4 class="font-bold text-brand-primary text-xs uppercase mb-2">What’s included:</h4>
+                                <ul class="space-y-2 text-xs text-left mb-4">
+                                    <li>• Access to discounts through a trusted, private-practice VSP doctor</li>
+                                    <li>• One rate of $50 for eye exams</li>
+                                    <li>• 15% savings on contact lens exams</li>
+                                    <li>• Special pricing on complete pairs of glasses and sunglasses</li>
+                                    <li>• Unlimited use on materials throughout the year</li>
+                                    <li>• Exclusive Member Extras and special offers</li>
+                                </ul>
+                                <p class="text-[10px] text-gray-500 italic space-y-1 text-left">
+                                    <span class="block">*Brands subject to change</span>
+                                    <span class="block">**This cost is only available with the purchase of a complete pair of prescription glasses; otherwise you'll receive 20% off an eye exam only.</span>
+                                    <span class="block">***Applies only to contact lens exam, not materials. You're responsible for 100% of the contact lens material cost. This plan is not insurance. Not available in WA.</span>
+                                </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full">
+                        <div class="bg-[#4a8a0a] p-4 text-center h-16 flex items-center justify-center">
+                            <h3 class="text-white font-bold text-sm uppercase">Hearing Program</h3>
+                        </div>
+                        <div class="p-6 text-xs text-gray-700 leading-relaxed flex-grow text-justify">
+
+                            <img src="Dental-power-page/Hearing Program_DentalPower_card.jpg" alt="" class="mb-4 rounded-lg shadow-md">
+                            <p class="mb-4">
+                                We are pleased to provide a hearing care discount plan that makes hearing-aid services accessible, as well as affordable. HearPO is one of the largest providers of hearing health care benefits in the United States offering members a variety of hearing aids and services through a simple three step process.
+                            </p>
+
+                            <div id="card3-more" class="hidden mt-4">
+                                <h4 class="font-bold text-brand-primary text-xs uppercase mb-2">Key Features of Our HearPO:</h4>
+                                <ul class="space-y-2 text-xs text-left mb-4">
+                                    <li>• 30% Discount on diagnostic services, including hearing exams</li>
+                                    <li>• Lowest Price Guarantee*</li>
+                                    <li>• Financing Options with up to 12-months NO INTEREST</li>
+                                    <li>• 60 day no risk trial period</li>
+                                    <li>• 1 year follow-up care</li>
+                                    <li>• 3 year Warranty** on most hearing aids</li>
+                                    <li>• 1 year of free batteries (80 cell per hearing aid)</li>
+                                    <li>• Discounts on batteries mailed directly to your home</li>
+                                    <li>• Over a 90% customer satisfaction for over a decade!</li>
+                                </ul>
+                                <p class="text-[10px] text-gray-500 italic space-y-1 text-left">
+                                    <span class="block">*Competitor coupon required for verification of price and model. Limited to manufacturers offered through the HearPO program. Local Provider quotes only will be matched.</span>
+                                    <span class="block">**Some exclusions apply. Limited to one time claim for loss and damage.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 mt-auto">
+                            <button onclick="toggleCard('card3')" id="btn-card3" class="w-full border border-gray-300 rounded-lg py-3 text-gray-600 font-bold text-xs uppercase hover:bg-white hover:text-brand-primary transition flex items-center justify-center">
+                                <span>Expand</span> <i class="fas fa-chevron-down ml-2 transform transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full">
+                        <div class="bg-[#4a8a0a] p-4 text-center h-16 flex items-center justify-center">
+                            <h3 class="text-white font-bold text-sm uppercase">Prescription Discount Program</h3>
+                        </div>
+                        <div class="p-6 text-xs text-gray-700 leading-relaxed flex-grow text-justify">
+
+                            <img src="Dental-power-page/Prescription Discount Program_DentalPower_card.jpg" alt="" class="mb-4 rounded-lg shadow-md">
+                            <p class="mb-4">
+                                Members are entitled to prescription savings offered by MedImpact. Discounts are available at over 53,000 participating pharmacies nationwide. At the pharmacy, members will simply present their membership card to receive an average savings from 15% to 60% off generic drugs and average savings from 15% to 25% off brand name prescriptions.
+                            </p>
+
+                            <div id="card4-more" class="hidden mt-4 text-left">
+                                <h4 class="font-bold text-brand-primary text-xs uppercase mb-2">Mail Order Pharmacy</h4>
+                                <p class="text-xs mb-4">
+                                    Members can save even more on maintenance medications through the convenient and money saving mail service. MedVantix members receive savings on 90 day supplies of medications when ordered online, by phone or through the mail with our mail-order pharmacy!
+                                </p>
+                                <h4 class="font-bold text-brand-primary text-xs uppercase mb-2">Participating Pharmacies:</h4>
+                                <p class="text-xs mb-4">
+                                    Our Card is accepted in over 53,000 pharmacies nationwide including: CVS Pharmacy, Walgreens, Walmart Pharmacy, Target, Rite Aid, Safeway, Kroger Pharmacy, Publix Pharmacy, Sam's Club Pharmacy, Costco Pharmacy, and many more.
+                                </p>
+                                <p class="text-xs font-bold">
+                                    For prescription drug pricing or to locate a participating pharmacy, please call toll free (855) PYF-CLUB.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 mt-auto">
+                            <button onclick="toggleCard('card4')" id="btn-card4" class="w-full border border-gray-300 rounded-lg py-3 text-gray-600 font-bold text-xs uppercase hover:bg-white hover:text-brand-primary transition flex items-center justify-center">
+                                <span>Expand</span> <i class="fas fa-chevron-down ml-2 transform transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function toggleCard(id) {
+                const content = document.getElementById(id + '-more');
+                const btn = document.getElementById('btn-' + id);
+                const span = btn.querySelector('span');
+                const icon = btn.querySelector('i');
+
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    span.textContent = "Collapse";
+                    icon.classList.add('rotate-180');
+                } else {
+                    content.classList.add('hidden');
+                    span.textContent = "Expand";
+                    icon.classList.remove('rotate-180');
+                }
+            }
+        </script>
+
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                
+                <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark uppercase mb-16">
+                    A Comprehensive Package For Just <span class="text-brand-primary">$16.95/mo</span>
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                    
+                    <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 text-left">
+                        <div class="bg-[#dcfce7] py-4 text-center">
+                            <h3 class="text-brand-dark font-black uppercase tracking-wider">Dental Power</h3>
+                        </div>
+                        <div class="bg-[#4a8a0a] py-6 text-center">
+                            <h2 class="text-white text-3xl font-black uppercase">$16.95/Month</h2>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h4 class="font-bold text-gray-900 text-sm mb-6 uppercase">Includes</h4>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center"><i class="fas fa-check-square text-brand-primary text-xl mr-3"></i><span class="text-gray-700 font-bold text-sm">Dental network access (70,000+ providers)</span></li>
+                                <li class="flex items-center"><i class="fas fa-check-square text-brand-primary text-xl mr-3"></i><span class="text-gray-700 font-bold text-sm">Vision savings program</span></li>
+                                <li class="flex items-center"><i class="fas fa-check-square text-brand-primary text-xl mr-3"></i><span class="text-gray-700 font-bold text-sm">Hearing care discounts</span></li>
+                                <li class="flex items-center"><i class="fas fa-check-square text-brand-primary text-xl mr-3"></i><span class="text-gray-700 font-bold text-sm">Prescription drug savings (53,000+ pharmacies)</span></li>
+                                <li class="flex items-center"><i class="fas fa-check-square text-brand-primary text-xl mr-3"></i><span class="text-gray-700 font-bold text-sm">Nationwide provider networks</span></li>
+                                <li class="flex items-center"><i class="fas fa-check-square text-brand-primary text-xl mr-3"></i><span class="text-gray-700 font-bold text-sm">Purchase Power retail discounts</span></li>
+                            </ul>
+
+                            <a href="https://buy.stripe.com/8x25kwgb80Gjgyg3hKcIE05" target="_blank" class="block w-full bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-4 rounded shadow transition text-center text-sm uppercase tracking-wide">
+                                Get Dental Power
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-6 h-[350px]">
+                            <img src="Dental-power-page/Dental Power_Comprehensive Package.jpg" 
+                                 alt="Dentist and Family" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <div class="bg-[#dcfce7] p-4 rounded-lg text-center">
+                            <p class="text-sm font-medium text-gray-800">
+                                Dental Power includes Purchase Power at no additional cost.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark uppercase mb-12">
+                    Common <span class="text-brand-primary">Questions</span>
+                </h2>
+
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Is PYF Dental Power an insurance plan?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            No, PYF Dental Power is a discount plan. It provides predetermined discounts on dental, vision, hearing, and prescription medicine services.
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Can my whole family use it?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Yes. The Dental Power plan can be used by your entire household.
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Can I use this plan if I already have dental insurance?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Yes, this plan would not conflict with your dental insurance. It would be an added complement.
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Can I get Dental Power without joining as an affiliate?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Yes.
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What does "affiliate enrollment" mean?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            PYF's affiliate program is free and allows you to receive referral fees when you refer others to PYF products. You can enroll as an affiliate with any PYF product at no additional cost, or enroll as an affiliate with no product purchase required. <a href="affiliate-page.html" class="text-brand-primary underline">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Can I use Dental Power with my current dentist?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            You can use the plan with any provider in the Dental Power network. Check the provider directory to see if your dentist participates.
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Are there any waiting periods or annual limits?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            No. There are no waiting periods, no annual limits, and no pre-approvals required.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.querySelectorAll('.faq-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    content.classList.toggle('hidden');
+                    button.querySelector('i').classList.toggle('rotate-180');
+                });
+            });
+        </script>
+
+
+        <section class="py-20 bg-[#F2FFEB]">
+            <div class="container mx-auto px-4 text-center">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-10">
+                    Ready To Get <span class="text-brand-primary">Dental Power?</span>
+                </h2>
+
+                <div class="mb-16">
+                    <a href="https://buy.stripe.com/8x25kwgb80Gjgyg3hKcIE05" target="_blank" class="bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-5 px-16 rounded shadow-lg transition uppercase text-sm tracking-widest inline-block transform hover:-translate-y-1 hover:shadow-xl">
+                        Get Dental Power
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    
+                    <div class="bg-[#dcfce7] rounded-xl p-6 flex items-center justify-center space-x-4 shadow-sm">
+                        <i class="fas fa-check-circle text-brand-primary text-3xl"></i>
+                        <span class="font-bold text-brand-dark text-sm">30-Day Money-Back Guarantee</span>
+                    </div>
+
+                    <div class="bg-[#dcfce7] rounded-xl p-6 flex items-center justify-center space-x-4 shadow-sm">
+                        <i class="fas fa-check-circle text-brand-primary text-3xl"></i>
+                        <span class="font-bold text-brand-dark text-sm">No Long-Term Contract</span>
+                    </div>
+
+                    <div class="bg-[#dcfce7] rounded-xl p-6 flex items-center justify-center space-x-4 shadow-sm">
+                        <i class="fas fa-check-circle text-brand-primary text-3xl"></i>
+                        <span class="font-bold text-brand-dark text-sm">Providing service since 2011</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h3 class="text-2xl font-bold text-brand-dark uppercase mb-8 text-center">Disclaimer</h3>
+                <div class="text-sm text-gray-600 leading-relaxed text-justify space-y-4 border-t border-gray-200 pt-8">
+                    <p>
+                        <strong>Disclosures: THIS PLAN IS NOT INSURANCE. THIS IS NOT A MEDICARE PRESCRIPTION DRUG PLAN.*</strong> This plan does not meet the minimum creditable coverage requirements under M.G.L. c. 111M and 956 CMR 5.00. The plan provides discounts at certain health care providers for medical services. The range of discounts will vary depending on the type of provider and service. The plan does not make payments directly to the providers of medical services. Plan members are obligated to pay for all health care services but will receive a discount from those health care providers who have contracted with the discount medical plan organization. You may access a list of participating health care providers at this website. Upon request the plan will make available a written list of participating health care providers. You have the right to cancel within the first 30 days after receipt of membership materials and receive a full refund, less a nominal processing fee (nominal fee for MD residents is $5). Discount Medical Plan
+                    </p>
+                    <p>
+                        <strong>Organization and administrator:</strong> Careington International Corporation, 7400 Gaylord Parkway, Frisco, TX 75034; phone 800-441-0380. The program and its administrators have no liability for providing or guaranteeing service by providers or the quality of service rendered by providers. This program is not available in Montana and Vermont. This plan is not currently available in Washington. *Medicare statement applies to MD residents when pharmacy discounts are part of program
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+   <footer class="relative bg-footer-bg text-white pt-16 pb-6 border-t-4 border-brand-primary">
+        <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+            <img src="Homepage/Footer_general.jpg" class="w-full h-full object-cover grayscale">
+        </div>
+
+        <div class="relative container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Find Us</h3>
+                    <ul class="space-y-6">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-primary text-xl mr-4 w-6"></i>
+                            <span class="text-gray-300 text-sm">+1 (855) 793-2582</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-primary text-xl mr-4 w-6"></i>
+                            <a href="mailto:Service@PayYourselfFirst.com" class="text-gray-300 text-sm hover:text-brand-primary transition">info@payyourselffirst.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Legal</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="terms.html" class="hover:text-brand-primary transition" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-primary transition" target="_blank" >Privacy Policy</a></li>
+                        <li><a href="cookie.html" class="hover:text-brand-primary transition" target="_blank" >Cookie Policy</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-brand-primary transition" target="_blank" >Disclaimer</a></li>
+                        <li><a href="use-policy.html" class="hover:text-brand-primary transition" target="_blank" >Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Quick Links</h3>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                        <li><a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="hover:text-brand-primary transition" target="_blank"> Become an Affiliate</a></li>
+                        <li><a href="packages.html" class="hover:text-brand-primary transition" target="_blank" >Join Now</a></li>
+                        <li><a href="contact-us.html" class="hover:text-brand-primary transition" target="_blank" >Contact Us</a></li>
+                    </ul>
+                    
+                    <div class="flex space-x-3">
+                         <a href="https://www.facebook.com/share/1SgQW8W1qQ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/pyfinc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pay_yourself_first_inc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/pay-yourself-first-inc/about/?viewAsMember=true" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p class="mb-2 md:mb-0">Copyright © 2025 - <span class="text-brand-primary">Pay Yourself First</span>. All Rights Reserved.</p>
+                <p>Powered By <span class="text-brand-primary">SapphireLead</span> © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Logic
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) { header.classList.add('header-hidden'); } 
+            else { header.classList.remove('header-hidden'); }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+
+    <button id="backToTopBtn" 
+            onclick="scrollToTop()" 
+            class="fixed bottom-8 right-8 z-50 bg-brand-primary hover:bg-[#2d7a00] text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show/Hide logic based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show after scrolling down 300px
+                backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

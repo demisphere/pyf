@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Yourself First</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Roboto Flex", 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#389400', 
+                        'brand-dark': '#1c1c1c',
+                        'footer-bg': '#1f2022',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://cdn.pagesense.io/js/payyourselffirst/c2e5673c7d15457d8a0925080101f545.js"></script>
+
+    <style>
+        /* Custom styles for sticky header transition */
+         .sticky-header { transition: transform 0.3s ease-in-out; }
+        .header-hidden { transform: translateY(-100%); }
+        
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+   <div id="main-header" class="fixed top-0 left-0 w-full z-50 sticky-header shadow-md">
+        <div class="bg-brand-dark text-white py-6 text-xs font-semibold">
+            <div class="container mx-auto px-4 flex justify-end items-center space-x-6">
+                <a href="https://payyourselffirst.benefithub.com/Welcome" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <div class="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center text-white mr-2 text-[10px]"><i class="fas fa-dollar-sign"></i></div> DISCOUNT PORTAL
+                </a>
+                <a href="https://backoffice.pyfaffiliates.com/merchants/login.php#login" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <i class="fas fa-user text-brand-primary mr-2"></i> AFFILIATE LOGIN
+                </a>
+            </div>
+        </div>
+        <nav class="bg-white py-4">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="index.html"><img src="pyf-logo.svg" alt="Pay Yourself First Logo" class="h-12 object-contain"></a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none"><i class="fas fa-bars"></i></button>
+                <div class="hidden lg:flex items-center space-x-5 text-xs xl:text-sm font-bold text-gray-700 uppercase">
+                    <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                    <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                    <a href="business-support-package.html" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white px-4 py-3 rounded shadow-md hover:shadow-lg hover:opacity-90 transition whitespace-nowrap"> Business Support Package</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden text-sm bg-white border-t mt-4 p-4 flex flex-col space-y-4 font-bold text-gray-700 uppercase">
+                 <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                   <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="#" class="text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                <a href="business-support-package.html" class="bg-brand-primary text-white text-center py-3 rounded"> Business Support Package</a>
+            </div>
+        </nav>
+    </div>
+
+<header class="container mx-auto px-4 mb-16 mt-48">
+        <div class="relative rounded-[2rem] overflow-hidden h-[500px] md:h-[600px] shadow-2xl group">
+            
+            <img src="About-us/About Us_Hero.jpg" 
+                 alt="Team Helping Customers" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+          <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative z-10 h-full flex flex-col justify-center px-4 md:px-20 max-w-7xl">
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase leading-tight drop-shadow-md">
+                    We're Here To Help <span class="text-[#bbf7d0]">Everyday People</span><br>
+                    Take Control Of Their Financial Future
+                </h1>
+                
+                <p class="text-base md:text-xl text-gray-100 mb-10 font-medium leading-relaxed max-w-3xl">
+                    Pay Yourself First was created to make financial stability accessible to everyone, not just the wealthy or very high-income earners. Our system gives people access to the tools, guidance, and support to earn more, keep more, and spend less through practical, real-world solutions.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="how-we-help-you.html" target="_blank" class="bg-[#75C400] text-white font-bold py-4 px-8 rounded shadow hover:bg-[#389400] transition uppercase text-sm tracking-wide text-center">
+                        How We Help You
+                    </a>
+                    <a href="packages.html" target="_blank" class="bg-[#dcfce7] text-brand-primary font-bold py-4 px-8 rounded shadow hover:bg-white transition uppercase text-sm tracking-wide text-center">
+                        View Our Packages
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Who <span class="text-brand-primary">We Are</span>
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    
+                    <div>
+                        <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                            Pay Yourself First (PYF) is a financial empowerment company built on a simple belief: <span class="font-bold text-brand-primary">You deserve a clear, practical way to improve your finances.</span>
+                        </p>
+                        <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+                            As the cost of living rises and financial pressure grows, too many people feel stuck.
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">W-2 workers overpaying taxes without realizing it</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">1099 earners facing unstable income</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Families spending more but saving less</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Individuals working hard but falling behind financially.</span>
+                            </li>
+                        </ul>
+
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            PYF was created to solve these problems by giving you access to the tools, education, and professional support they need to gain financial control.
+                        </p>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Our company is built around a system. One designed to help people break
+negative financial cycles, build financial stability, and move forward with clarity
+and confidence.
+                        </p>
+                    </div>
+
+                    <div class="h-full min-h-[400px]">
+                        <img src="About-us/About Us_Who We Are.jpg" 
+                             alt="Team Smiling" 
+                             class="rounded-[2rem] shadow-xl w-full h-full object-cover">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Our <span class="text-brand-primary">Origin</span>
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    
+                    <div class="h-full min-h-[400px] order-2 lg:order-1">
+                        <img src="About-us/About Us_Our Origin.jpg" 
+                             alt="PYF Origin Story" 
+                             class="rounded-[2rem] shadow-xl w-full h-full object-cover">
+                    </div>
+
+                    <div class="order-1 lg:order-2">
+                        <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+                            PYF was built by financial professionals with decades of experience guiding real people—just like you—toward better financial outcomes. Through this work, a consistent pattern emerged:
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">People earned money but struggled to keep it</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Tax rules were confusing and costly</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Financial tools used by the wealthy were out of reach for most</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Independent earners lacked support systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-[#C0392B] text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Many families headed toward an uncertain financial future</span>
+                            </li>
+                        </ul>
+
+                        <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                            The team behind PYF recognized a gap: people needed a system — not just products, tips, or one-time fixes, but a comprehensive approach that helped them improve their financial lives year after year.
+                        </p>
+                        
+                        <h3 class="text-2xl font-extrabold text-brand-dark uppercase">
+                            PYF was created to <span class="text-brand-primary">fill that gap.</span>
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <div class="bg-gray-50 rounded-[2rem] shadow-lg p-8 md:p-12 border border-gray-100 max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6">
+                                Our <span class="text-brand-primary">Mission</span>
+                            </h2>
+                            <p class="text-xl text-gray-700 font-medium mb-6">
+                                Our mission is simple
+                            </p>
+                            <p class="text-lg md:text-xl text-brand-dark font-bold leading-relaxed">
+                                To help everyday people gain control of their finances by giving them access to tools, education, and expert support normally out of reach to them.
+                            </p>
+                        </div>
+
+                        <div class="h-64 md:h-80">
+                            <img src="About-us/About Us_Our Mission.jpg" 
+                                 alt="Our Mission" 
+                                 class="rounded-2xl shadow w-full h-full object-cover">
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+       <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <div class="bg-white rounded-[2rem] shadow-2xl border border-gray-100 p-8 md:p-12 max-w-6xl mx-auto mb-16">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        
+                        <div class="h-full min-h-[300px]">
+                            <img src="About-us/About Us_Serving Everyday Americans.jpg" 
+                                 alt="Family Reviewing Finances" 
+                                 class="rounded-2xl shadow-lg w-full h-full object-cover">
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark uppercase mb-10 leading-tight">
+                                Serving Everyday Americans For Over A <span class="text-brand-primary">Decade</span>
+                            </h2>
+
+                            <div class="space-y-8">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-brand-dark">14+ Years</h3>
+                                    <p class="text-gray-600 font-medium">In business supporting individuals and families.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-brand-dark">46 States</h3>
+                                    <p class="text-gray-600 font-medium">Nationwide coverage and accessibility.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-brand-dark">Thousands</h3>
+                                    <p class="text-gray-600 font-medium">Of users building better financial futures.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="text-center max-w-4xl mx-auto mb-8">
+                    <h3 class="text-xl font-bold text-brand-dark uppercase mb-8">3 Core Principles</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center shadow-sm border border-gray-100">
+                            <i class="fas fa-brain text-brand-primary text-2xl mr-3"></i>
+                            <span class="font-bold text-brand-dark">Taxpayer Awareness</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center shadow-sm border border-gray-100">
+                            <i class="fas fa-book-reader text-brand-primary text-2xl mr-3"></i>
+                            <span class="font-bold text-brand-dark">Financial Literacy</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-center shadow-sm border border-gray-100">
+                            <i class="fas fa-city text-brand-primary text-2xl mr-3"></i>
+                            <span class="font-bold text-brand-dark">Entrepreneurship</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+            <section class="max-w-8xl mx-auto px-4 py-16 md:py-24">
+        
+        <!-- Header Section -->
+        <div class="text-center mb-16 space-y-4">
+            <h1 class="text-3xl md:text-5xl font-extrabold uppercase leading-tight">
+               A system, not a personality. <br> <span class="text-brand-primary">PYF is designed </span> to work regardless of who <span class="text-brand-primary">uses </span> it
+            </h1>
+            <p class="text-lg text-slate-600 font-medium">
+                Financial control comes from mastering three critical levers:
+            </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 px-16">
+
+            <!-- CARD 1: Earn More -->
+            <div class="group relative h-[500px] w-full overflow-hidden rounded-3xl shadow-xl cursor-pointer">
+                <!-- Background Image (Man with Money) -->
+                <img src="About-us/About Us_Built For Real Life_Earn More.jpg" 
+                     alt="Earn More" 
+                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[20%]">
+                
+                <!-- The Shutter Overlay -->
+                <!-- We use translate-y-[82%] to hide most of it initially, only showing the header height -->
+                <div class="absolute inset-0 top-auto h-full bg-gradient-to-t from-[#caddab] via-[#e4f0d0] to-[#e4f0d0] 
+                            transition-transform duration-500 ease-[cubic-bezier(0.33,1,0.68,1)] 
+                            translate-y-[calc(100%-90px)] group-hover:translate-y-0 
+                            p-6 flex flex-col">
+                    
+                    <!-- Header (Always Visible) -->
+                    <div class="flex items-center justify-between pb-12 border-b border-green-800/10 mb-4 h-[90px] shrink-0">
+                        <h2 class="text-2xl font-bold text-green-900">1. Earn More</h2>
+                        <div class="h-10 w-10 bg-green-900 rounded-full flex items-center justify-center text-white transition-transform duration-500 group-hover:rotate-180">
+                            <i data-lucide="chevron-up"></i>
+                        </div>
+                    </div>
+
+                    <!-- Revealed Content -->
+                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 overflow-y-auto">
+                        <p class="text-green-950 text-lg leading-relaxed font-medium">
+                            PYF offers simple, accessible ways for people to open new income pathways through home-based entrepreneurship — supported by:
+                        </p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center text-green-900 font-semibold bg-white/40 p-3 rounded-lg">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 mr-3 text-green-700"></i> Education
+                            </li>
+                            <li class="flex items-center text-green-900 font-semibold bg-white/40 p-3 rounded-lg">
+                                <i data-lucide="wrench" class="w-5 h-5 mr-3 text-green-700"></i> Tools
+                            </li>
+                            <li class="flex items-center text-green-900 font-semibold bg-white/40 p-3 rounded-lg">
+                                <i data-lucide="users" class="w-5 h-5 mr-3 text-green-700"></i> Professional Guidance
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: Keep More -->
+            <div class="group relative h-[500px] w-full overflow-hidden rounded-3xl shadow-xl cursor-pointer">
+                <!-- Background Image (Woman with Piggybank) -->
+                <img src="About-us/About Us_Built For Real Life_Keep More.jpg" 
+                     alt="Keep More" 
+                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[20%]">
+                
+                <div class="absolute inset-0 top-auto h-full bg-gradient-to-t from-[#caddab] via-[#e4f0d0] to-[#e4f0d0] 
+                            transition-transform duration-500 ease-[cubic-bezier(0.33,1,0.68,1)] 
+                            translate-y-[calc(100%-90px)] group-hover:translate-y-0 
+                            p-6 flex flex-col">
+                    
+                    <div class="flex items-center justify-between pb-12 border-b border-green-800/10 mb-4 h-[90px] shrink-0">
+                        <h2 class="text-2xl font-bold text-green-900">2. Keep More</h2>
+                        <div class="h-10 w-10 bg-green-900 rounded-full flex items-center justify-center text-white transition-transform duration-500 group-hover:rotate-180">
+                            <i data-lucide="chevron-up"></i>
+                        </div>
+                    </div>
+
+                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 overflow-y-auto custom-scrollbar">
+                        <p class="text-green-950 mb-4 text-sm font-medium">
+                            Most W-2 earners unknowingly overpay their taxes. PYF connects users with licensed tax professionals who help them:
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start text-green-900 text-sm">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 mt-0.5 text-green-700 shrink-0"></i> 
+                                Adjust withholding correctly
+                            </li>
+                            <li class="flex items-start text-green-900 text-sm">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 mt-0.5 text-green-700 shrink-0"></i> 
+                                Unlock home-based deductions
+                            </li>
+                            <li class="flex items-start text-green-900 text-sm">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 mt-0.5 text-green-700 shrink-0"></i> 
+                                Maximize tax savings
+                            </li>
+                            <li class="flex items-start text-green-900 text-sm">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 mt-0.5 text-green-700 shrink-0"></i> 
+                                Reduce taxes to legal minimum
+                            </li>
+                        </ul>
+                        <div class="bg-green-900/10 p-3 rounded-lg border-l-4 border-green-800">
+                            <p class="text-xs text-green-900 font-bold italic">
+                                "This single category often creates the biggest transformation for everyday Americans."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Spend Less -->
+            <div class="group relative h-[500px] w-full overflow-hidden rounded-3xl shadow-xl cursor-pointer">
+                <!-- Background Image (Shopping/Receipt) -->
+                <img src="About-us/About Us_Built For Real Life_Spend Less.jpg" 
+                     alt="Spend Less" 
+                     class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[20%]">
+                
+                <div class="absolute inset-0 top-auto h-full bg-gradient-to-t from-[#caddab] via-[#e4f0d0] to-[#e4f0d0] 
+                            transition-transform duration-500 ease-[cubic-bezier(0.33,1,0.68,1)] 
+                            translate-y-[calc(100%-90px)] group-hover:translate-y-0 
+                            p-6 flex flex-col">
+                    
+                    <div class="flex items-center justify-between pb-12 border-b border-green-800/10 mb-4 h-[90px] shrink-0">
+                        <h2 class="text-2xl font-bold text-green-900">3. Spend Less</h2>
+                        <div class="h-10 w-10 bg-green-900 rounded-full flex items-center justify-center text-white transition-transform duration-500 group-hover:rotate-180">
+                            <i data-lucide="chevron-up"></i>
+                        </div>
+                    </div>
+
+                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 overflow-y-auto">
+                        <p class="text-green-950 mb-4 text-sm font-medium">
+                            Access to nationwide savings programs that reduce everyday expenses, including:
+                        </p>
+                        
+                        <!-- Two Column Grid for Bullets -->
+                        <div class="grid grid-cols-2 gap-3 mb-6">
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Shopping</div>
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Dining</div>
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Vision</div>
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Dental</div>
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Travel</div>
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Telehealth</div>
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Auto Care</div>
+                            <div class="bg-white/50 rounded-lg p-2 text-center text-sm font-semibold text-green-900 shadow-sm">Rx Meds</div>
+                        </div>
+
+                        <p class="text-green-900 font-bold text-center text-sm border-t border-green-800/10 pt-4">
+                            Every dollar saved is a dollar that strengthens long-term stability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <script>
+        lucide.createIcons();
+    </script>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
+                    
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-4">
+                            Who We <span class="text-brand-primary">Serve</span>
+                        </h2>
+                        <p class="text-gray-800 font-bold mb-8">
+                            PYF is built for real people with real financial goals.
+                        </p>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">W-2 workers who want to keep more of what they earn</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">1099 earners who need stability and tax guidance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Home-based entrepreneurs building supplemental income</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Gig workers seeking predictable support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Families lowering household expenses</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-square text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                <span class="text-gray-700 font-medium">Individuals planning for long-term security</span>
+                            </li>
+                        </ul>
+
+                        <p class="text-brand-dark font-bold text-lg">
+                            If financial improvement is your goal, PYF is designed for you.
+                        </p>
+                    </div>
+
+                    <div class="h-full min-h-[400px]">
+                        <img src="About-us/About Us_Who We Serve.jpg" 
+                             alt="Who We Serve" 
+                             class="rounded-[2rem] shadow-xl w-full h-full object-cover">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-6xl">
+                
+                <div class="bg-white rounded-[2rem] shadow-xl p-8 md:p-12 mb-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="h-full min-h-[300px]">
+                            <img src="About-us/About Us_What Makes PYF Different.jpg" 
+                                 alt="Different Approach" 
+                                 class="rounded-xl w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark uppercase mb-6">
+                                What Makes <span class="text-brand-primary">PYF Different</span>
+                            </h2>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Professional-grade tax and legal support for everyday people</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Real savings programs that reduce real expenses</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Entrepreneurial tools and education resources that are simple to use</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">A system, not a personality. PYF is designed to work regardless of who leads it</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">A clear, step-by-step path toward financial clarity for those who want it</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Support year-round, not just during tax season</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[2rem] shadow-xl p-8 md:p-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 lg:order-1">
+                            <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark uppercase mb-6">
+                                Our <span class="text-brand-primary">Pledge To Help You</span>
+                            </h2>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Understand your finances</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Reduce unnecessary expenses</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Legally minimize your tax burden</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Increase your income opportunities</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Gain a clearer path toward long-term stability</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-brand-primary text-xl mt-1 mr-4 flex-shrink-0"></i>
+                                    <span class="text-gray-700 font-medium">Access professional guidance</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order-1 lg:order-2 h-full min-h-[300px]">
+                            <img src="About-us/About Us_Built For Real Life_Our Commitment.jpg" 
+                                 alt="Our Commitment" 
+                                 class="rounded-xl w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+                                <section class="py-20 bg-[#F2FFEB]">
+            <div class="container mx-auto px-4 text-center">
+                
+                <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark uppercase mb-8">
+                   Start Your PYF Journey               
+                    </h2>
+                
+                <p class="text-brand-dark font-bold text-lg md:text-xl mb-12">
+                    Choose the path that fits your goals today. PYF will support
+you every step of the way.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                    
+                    <a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="w-full md:w-auto bg-gradient-to-r from-[#389400] to-[#75C400] text-white font-bold py-4 px-8 rounded shadow hover:shadow-lg hover:opacity-95 transition uppercase text-sm tracking-wide">
+                       BECOME AN AFFILIATE
+                    </a>
+
+
+
+                    <a href="packages.html" class="w-full md:w-auto bg-gradient-to-r from-[#389400] to-[#75C400] text-white font-bold py-4 px-8 rounded shadow hover:shadow-lg hover:opacity-95 transition uppercase text-sm tracking-wide" target="_blank">
+                       View Service Packages
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <footer class="relative bg-footer-bg text-white pt-16 pb-6 border-t-4 border-brand-primary">
+        <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+            <img src="Homepage/Footer_general.jpg" class="w-full h-full object-cover grayscale">
+        </div>
+
+        <div class="relative container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Find Us</h3>
+                    <ul class="space-y-6">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-primary text-xl mr-4 w-6"></i>
+                            <span class="text-gray-300 text-sm">+1 (855) 793-2582</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-primary text-xl mr-4 w-6"></i>
+                            <a href="mailto:Service@PayYourselfFirst.com" class="text-gray-300 text-sm hover:text-brand-primary transition">info@payyourselffirst.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Legal</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="terms.html" class="hover:text-brand-primary transition" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-primary transition" target="_blank" >Privacy Policy</a></li>
+                        <li><a href="cookie.html" class="hover:text-brand-primary transition" target="_blank" >Cookie Policy</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-brand-primary transition" target="_blank" >Disclaimer</a></li>
+                        <li><a href="use-policy.html" class="hover:text-brand-primary transition" target="_blank" >Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Quick Links</h3>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                        <li><a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="hover:text-brand-primary transition" target="_blank"> Become an Affiliate</a></li>
+                        <li><a href="packages.html" class="hover:text-brand-primary transition" target="_blank" >Join Now</a></li>
+                        <li><a href="contact-us.html" class="hover:text-brand-primary transition" target="_blank" >Contact Us</a></li>
+                    </ul>
+                    
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/share/1SgQW8W1qQ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/pyfinc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pay_yourself_first_inc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/pay-yourself-first-inc/about/?viewAsMember=true" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p class="mb-2 md:mb-0">Copyright © 2025 - <span class="text-brand-primary">Pay Yourself First</span>. All Rights Reserved.</p>
+                <p>Powered By <span class="text-brand-primary">SapphireLead</span> © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Logic
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) { header.classList.add('header-hidden'); } 
+            else { header.classList.remove('header-hidden'); }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+
+    <button id="backToTopBtn" 
+            onclick="scrollToTop()" 
+            class="fixed bottom-8 right-8 z-50 bg-brand-primary hover:bg-[#2d7a00] text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show/Hide logic based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show after scrolling down 300px
+                backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

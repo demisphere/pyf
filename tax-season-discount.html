@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Yourself First - Tax Season Discount</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                       sans: ["Roboto Flex", 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#389400', 
+                        'brand-dark': '#1c1c1c',
+                        'footer-bg': '#1f2022',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://cdn.pagesense.io/js/payyourselffirst/c2e5673c7d15457d8a0925080101f545.js"></script>
+
+    <style>
+        /* Custom styles for sticky header transition */
+         .sticky-header { transition: transform 0.3s ease-in-out; }
+        .header-hidden { transform: translateY(-100%); }
+        
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+   <div id="main-header" class="fixed top-0 left-0 w-full z-50 sticky-header shadow-md">
+        <div class="bg-brand-dark text-white py-6 text-xs font-semibold">
+            <div class="container mx-auto px-4 flex justify-end items-center space-x-6">
+                <a href="https://payyourselffirst.benefithub.com/Welcome" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <div class="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center text-white mr-2 text-[10px]"><i class="fas fa-dollar-sign"></i></div> DISCOUNT PORTAL
+                </a>
+                <a href="https://backoffice.pyfaffiliates.com/merchants/login.php#login" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <i class="fas fa-user text-brand-primary mr-2"></i> AFFILIATE LOGIN
+                </a>
+            </div>
+        </div>
+        <nav class="bg-white py-4">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="index.html"><img src="pyf-logo.svg" alt="Pay Yourself First Logo" class="h-12 object-contain"></a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none"><i class="fas fa-bars"></i></button>
+                <div class="hidden lg:flex items-center space-x-5 text-xs xl:text-sm font-bold text-gray-700 uppercase">
+                    <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                    <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-brand-primary px-3 py-2 text-brand-primary transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                    <a href="business-support-package.html" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white px-4 py-3 rounded shadow-md hover:shadow-lg hover:opacity-90 transition whitespace-nowrap"> Business Support Package</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden text-sm bg-white border-t mt-4 p-4 flex flex-col space-y-4 font-bold text-gray-700 uppercase">
+                 <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                   <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-brand-primary px-3 py-2 text-brand-primary transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                <a href="business-support-package.html" class="bg-brand-primary text-white text-center py-3 rounded"> Business Support Package</a>
+            </div>
+        </nav>
+    </div>
+
+
+
+   <header class="container mx-auto px-4 mb-16 mt-48">
+        <div class="relative rounded-[2rem] overflow-hidden h-[500px] md:h-[700px] shadow-2xl group">
+            
+            <img src="Tax-season-discount/Tax Season Discount_Hero.jpg" 
+                 alt="Professional Tax Meeting" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-20 max-w-6xl">
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase leading-tight drop-shadow-md">
+                    Access To Expert Tax Preparation <br> And Advice For Just $49
+                </h1>
+                
+                <p class="text-base md:text-lg text-gray-100 mb-10 font-medium leading-relaxed max-w-4xl">
+                    Service provided by a national Professional Tax Firm with 30 years of experience and CPAs on staff.<br> Federal and State filing included. Professional Tax Advice all season long.
+                </p>
+                
+                <div>
+                    <a href="https://buy.stripe.com/3cIfZa2kiex9gyg4lOcIE02" target="_blank" class="bg-[#75C400] text-white font-bold py-4 px-10 rounded shadow hover:bg-[#389400] transition uppercase text-sm tracking-wide inline-block">
+                        Start My Access
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-2xl md:text-3xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Your <span class="bg-brand-primary text-white px-2 py-1 rounded mx-1">$49</span> Tax Season Discount Package <span class="text-brand-primary">Includes</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                    
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Professional Tax Preparation</h3>
+                        <p class="text-xs text-gray-600">Service provided by a professional tax firm with 30 years of experience advising over 1 million taxpayers</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Federal and State Filing</h3>
+                        <p class="text-xs text-gray-600">Preparation and E-Filing for both returns</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Schedule C or E Filing</h3>
+                        <p class="text-xs text-gray-600">Flat $60 for Schedule C or E (Personal or LLC)</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Professional Tax Advice</h3>
+                        <p class="text-xs text-gray-600">Access to human experts throughout tax season</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Review of Prior Year Returns</h3>
+                        <p class="text-xs text-gray-600">Provided by expert and experienced tax professionals</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Second Opinion Available</h3>
+                        <p class="text-xs text-gray-600">Independent review from tax professionals</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">$1,000,000 Liability Protection</h3>
+                        <p class="text-xs text-gray-600">Tax services backed by a professional liability insurance policy.</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Tax Attorney Consultation</h3>
+                        <p class="text-xs text-gray-600">Access to attorney consultation for business matters</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-xl text-center hover:shadow-lg transition border border-gray-100 h-full">
+                        <div class="w-16 h-16 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-2">Business Legal Services</h3>
+                        <p class="text-xs text-gray-600">Access to ongoing discounted legal support through our partners</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="bg-[#F2FFEB] rounded-3xl p-8 md:p-12 text-center shadow-sm">
+                    
+                    <div class="space-y-4 max-w-md mx-auto text-sm md:text-base font-medium text-gray-700 mb-8">
+                        <div class="flex justify-between border-b border-gray-300 pb-2">
+                            <span>Regular Tax Prep:</span>
+                            <span class="font-bold text-brand-primary line-through">$ 279</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-300 pb-2">
+                            <span>Regular Tax Advice:</span>
+                            <span class="font-bold text-brand-primary line-through">$ 119</span>
+                        </div>
+                        <div class="flex justify-between font-bold text-gray-900 pt-2">
+                            <span>Total Retail Value:</span>
+                            <span class="line-through">$ 398</span>
+                        </div>
+                    </div>
+
+                    <h2 class="text-4xl md:text-6xl font-black text-brand-dark uppercase mb-4">
+                        Your Price: <span class="text-brand-primary">$49</span>
+                    </h2>
+                    <h3 class="text-2xl md:text-3xl font-bold text-brand-dark uppercase">
+                        You Save: <span class="text-brand-primary">$349</span>
+                    </h3>
+
+                </div>
+            </div>
+        </section>
+
+ <section class="bg-white pt-16 md:pt-24 pb-16">
+            
+            <div class="container mx-auto px-4 mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch max-w-6xl mx-auto">
+                    
+                    <div class="h-[650px] min-h-[650px] lg:min-h-[650px] rounded-[2rem] overflow-hidden shadow-xl">
+                        <img src="Tax-season-discount/Tax Season Discount_Affordable Tax Preparation.jpg" 
+                             alt="Tax Team" 
+                             class="h-[650px] object-cover">
+                    </div>
+
+                    <div class="flex flex-col justify-center">
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark uppercase mb-6 leading-tight">
+                            Affordable Tax Preparation And Advice From A Human <span class="text-brand-primary">Expert</span>, Not Just Software.
+                        </h2>
+                        
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Get your max refund and file your taxes with confidence. No need to try and save money on tax preparation using "Do It Yourself" software. Have your taxes prepared and filed by using a professional firm at a very affordable price.
+                        </p>
+
+                        <h4 class="font-bold text-brand-dark mb-4 text-lg">If any of these sound familiar</h4>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-hand-point-right text-brand-primary mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700 font-medium">You're tired of overpaying for tax preparation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-hand-point-right text-brand-primary mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700 font-medium">You're not confident about the credentials of your tax preparer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-hand-point-right text-brand-primary mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700 font-medium">You're frustrated and unconfident about preparing your taxes yourself</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-hand-point-right text-brand-primary mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700 font-medium">You want professional help without spending hundreds of dollars</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-hand-point-right text-brand-primary mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700 font-medium">You need reliable tax advice throughout the season, not just at filing time</span>
+                            </li>
+                        </ul>
+
+                        <div class="border-2 border-brand-primary text-center py-3 rounded-lg font-bold text-brand-dark uppercase tracking-wider inline-block w-full md:w-auto px-8">
+                            This Package is for you!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w-full bg-[#ff8c00] text-white text-center py-4 px-4 font-bold text-sm md:text-base uppercase tracking-wide mb-12 shadow-sm">
+                Limited Time Offer | Purchase Period: December 1, 2025 – March 31, 2026
+            </div>
+
+            <div class="text-center px-4">
+                <a href="https://buy.stripe.com/3cIfZa2kiex9gyg4lOcIE02" target="_blank" class="bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-4 px-8 md:px-12 rounded shadow-lg transition uppercase text-sm tracking-widest inline-block transform hover:-translate-y-1">
+                   Start My Access
+                </a>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-7xl">
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-brand-dark uppercase mb-4">
+                        See How Much You <span class="text-brand-primary">Save With PYF</span>
+                    </h2>
+                    <p class="text-gray-600">Professional tax services for individuals and businesses at affordable prices.</p>
+                </div>
+
+                <div class="overflow-x-auto rounded-xl shadow-xl border border-gray-200">
+                    <table class="w-full text-center text-sm md:text-base border-collapse bg-white">
+                        <thead class="bg-[#00695c] text-white">
+                            <tr>
+                                <th class="p-4 text-left border-r border-[#004d40]">Return Type</th>
+                                <th class="p-4 border-r border-[#004d40]">DIY Software</th>
+                                <th class="p-4 border-r border-[#004d40]">Tax Chain</th>
+                                <th class="p-4 border-r border-[#004d40]">Local CPA</th>
+                                <th class="p-4 bg-[#0f2900] border-r border-[#0f2900] font-bold text-brand-primary border-b-4 border-brand-primary">PYF Tax Season Discount</th>
+                                <th class="p-4 bg-[#00695c]">You Save</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 font-medium text-gray-700">
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 text-left font-bold border-r">Simple 1040</td>
+                                <td class="p-4 border-r">$50-$100</td>
+                                <td class="p-4 border-r">$200-$300</td>
+                                <td class="p-4 border-r">$220-$300</td>
+                                <td class="p-4 bg-[#0f2900] text-white text-xl font-bold border-r">$49</td>
+                                <td class="p-4 bg-[#dcfce7] text-brand-dark font-bold text-lg">$151-$251</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 text-left font-bold border-r">1040 + Itemized</td>
+                                <td class="p-4 border-r">$100-$150</td>
+                                <td class="p-4 border-r">$300-$400</td>
+                                <td class="p-4 border-r">$323-$400</td>
+                                <td class="p-4 bg-[#0f2900] text-white text-xl font-bold border-r">$49</td>
+                                <td class="p-4 bg-[#dcfce7] text-brand-dark font-bold text-lg">$274-$351</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 text-left font-bold border-r">1040 + Schedule C/E</td>
+                                <td class="p-4 border-r">$150-$200</td>
+                                <td class="p-4 border-r">$400-$600</td>
+                                <td class="p-4 border-r">$400-$600</td>
+                                <td class="p-4 bg-[#0f2900] text-white text-xl font-bold border-r">$109</td>
+                                <td class="p-4 bg-[#dcfce7] text-brand-dark font-bold text-lg">$291-$491</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 text-left font-bold border-r">C Corporation</td>
+                                <td class="p-4 border-r text-gray-400">N/A*</td>
+                                <td class="p-4 border-r">$800-$2,000</td>
+                                <td class="p-4 border-r">$913-$2,500</td>
+                                <td class="p-4 bg-[#0f2900] text-white text-xl font-bold border-r">$395</td>
+                                <td class="p-4 bg-[#dcfce7] text-brand-dark font-bold text-lg">$518-$2,105</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 text-left font-bold border-r">S Corporation</td>
+                                <td class="p-4 border-r text-gray-400">N/A*</td>
+                                <td class="p-4 border-r">$800-$2,000</td>
+                                <td class="p-4 border-r">$800-$2,000</td>
+                                <td class="p-4 bg-[#0f2900] text-white text-xl font-bold border-r">$395</td>
+                                <td class="p-4 bg-[#dcfce7] text-brand-dark font-bold text-lg">$405-$1,605</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-center text-xs font-bold text-brand-primary mt-4 uppercase">*Corporate returns too complex for DIY software</p>
+
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-lg mb-8 uppercase">Done For You. NOT Do-It-Yourself.</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-brand-dark font-medium">
+                                <div class="w-8 h-8 rounded border-2 border-[#4a8a0a] flex items-center justify-center text-[#4a8a0a] mr-4"><i class="fas fa-check"></i></div>
+                                Credential Tax Experts
+                            </li>
+                            <li class="flex items-center text-brand-dark font-medium">
+                                <div class="w-8 h-8 rounded border-2 border-[#4a8a0a] flex items-center justify-center text-[#4a8a0a] mr-4"><i class="fas fa-check"></i></div>
+                                CPA's on staff
+                            </li>
+                            <li class="flex items-center text-brand-dark font-medium">
+                                <div class="w-8 h-8 rounded border-2 border-[#4a8a0a] flex items-center justify-center text-[#4a8a0a] mr-4"><i class="fas fa-check"></i></div>
+                                100% U.S Based
+                            </li>
+                            <li class="flex items-center text-brand-dark font-medium">
+                                <div class="w-8 h-8 rounded border-2 border-[#4a8a0a] flex items-center justify-center text-[#4a8a0a] mr-4"><i class="fas fa-check"></i></div>
+                                $1m Liability Insurance
+                            </li>
+                            <li class="flex items-center text-brand-dark font-medium">
+                                <div class="w-8 h-8 rounded border-2 border-[#4a8a0a] flex items-center justify-center text-[#4a8a0a] mr-4"><i class="fas fa-check"></i></div>
+                                Unlimited Sessions
+                            </li>
+                            <li class="flex items-center text-brand-dark font-medium">
+                                <div class="w-8 h-8 rounded border-2 border-[#4a8a0a] flex items-center justify-center text-[#4a8a0a] mr-4"><i class="fas fa-check"></i></div>
+                                Jan 1 - Apr 30 2026
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="h-80">
+                        <img src="Tax-season-discount/Tax Season Discount_Done For You.jpg" 
+                             alt="Happy Customer" 
+                             class="rounded-[2rem] shadow-xl w-full h-full object-cover">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-16 bg-[#F2FFEB] text-center">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <p class="text-sm md:text-base text-gray-800 font-medium leading-relaxed mb-8">
+                    Whether you're filing as an individual or running a business, professional tax preparation shouldn't break the bank. Most Americans pay $220 - $400+ for basic returns, and business owners pay $800-$2,500 for corporate filings. With PYF Tax Season Discount, you get the same professional CPA expertise, unlimited advice, and $1M liability insurance—for a fraction of the cost.
+                </p>
+                <a href="https://buy.stripe.com/3cIfZa2kiex9gyg4lOcIE02" target="_blank" class="bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-4 px-8 rounded shadow-lg transition uppercase text-xs tracking-widest inline-block">
+                    Start My Access
+                </a>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                    
+                    <div class="h-80 md:h-96 rounded-[2rem] overflow-hidden shadow-xl">
+                        <img src="Tax-season-discount/Tax Season Discount_Serving People Since 2011.jpg" 
+                             alt="Serving People" 
+                             class="w-full h-full object-cover">
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-brand-dark uppercase mb-6">
+                            Serving People <span class="text-brand-primary">Since 2011</span>
+                        </h2>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 items-justified text-justify">
+                            Pay Yourself First connects you with a national professional tax firm that has served over 1 million taxpayers since 1995. With 30 years of experience, CPAs on staff, and a $1 million professional liability insurance policy backing all advice, you get the expertise and protection you deserve—at a price that actually makes sense. Services are provided by independent third-party professionals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-brand-dark uppercase">
+                        Program <span class="text-brand-primary">Details & Timeline</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <div class="bg-[#F2FFEB] rounded-xl p-8 text-center border border-[#dcfce7] hover:shadow-lg transition">
+                        <div class="w-20 h-20 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-6">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-4">Program Dates</h3>
+                        <div class="text-xs text-gray-700 space-y-2">
+                            <p><span class="font-bold">Purchase Period:</span> December 1, 2025 – March 31, 2026</p>
+                            <p><span class="font-bold">Service Active:</span> January 1 – April 30, 2026</p>
+                            <p><span class="font-bold">Documentation Deadline:</span> March 31, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#4a8a0a] rounded-xl p-8 text-center shadow-xl transform md:scale-105 z-10 text-white">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-[#4a8a0a] text-3xl mx-auto mb-6">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3 class="font-bold mb-4">Pricing</h3>
+                        <div class="bg-[#F2FFEB] rounded-full py-2 px-6 inline-block mb-4">
+                            <span class="text-2xl text-brand-primary font-black">$49</span> <span class="text-sm text-brand-dark">(Regular price $99)</span>
+                        </div>
+                        <div class="text-xs text-white/90 space-y-1">
+                            <p>Schedule C/E: + $60 if needed</p>
+                            <p>Corporate filings: $395 per return</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] rounded-xl p-8 text-center border border-[#dcfce7] hover:shadow-lg transition">
+                        <div class="w-20 h-20 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-6">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark mb-4">What's Next</h3>
+                        <p class="text-xs text-gray-700 mb-4 leading-relaxed">
+                            Sign up today and lock in your rate. We'll connect you with your tax professionals when you're ready to file.
+                        </p>
+                        <div class="font-bold text-brand-dark text-xs">
+                            <p>No hidden fees</p>
+                            <p>No complex requirements</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+         <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark uppercase mb-12">
+                    Common Questions About <span class="text-brand-primary">Tax Season Discount</span>
+                </h2>
+
+                <div class="space-y-4">
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What is the service period for this Package?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            The service is active from January 1 – April 30, 2026. You can purchase the Package from December 1, 2025 through March 31, 2026 to lock in your $49 rate.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What's included in the $49?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            Access to federal and state tax preparation and filing, plus unlimited tax advice from professionals throughout the tax season.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What if I have Schedule C or E?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            Schedule C or E filing is available for a flat $60 fee (Personal or LLC) in addition to the $49 base price. These are the most common schedules. Other schedules are included at no extra cost or are deeply discounted.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What if I have a C Corporation or an S Corporation?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            The fee for corporate filings is $395 per return.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Is there a guarantee?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            All tax advice and preparation provided is backed by a $1,000,000 professional liability insurance policy for your protection.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Do I need to be a PYF affiliate to purchase this?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            No. This service is available to anyone. Affiliate enrollment is completely optional and free.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Can I add affiliate enrollment later?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            Yes. You can become an affiliate at any time—during your initial purchase or after.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What do affiliates earn?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            Affiliates may receive referral fees when others purchase PYF products through their referral. Referral fee details are described in the affiliate materials you receive after enrollment.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-white transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Are earnings guaranteed?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-200 text-gray-600 text-sm leading-relaxed bg-white">
+                            No. Referral fees depend solely on your personal activity and results vary.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Become A <span class="text-brand-primary">PYF Affiliate</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-lg mb-4">Earn $5 Per Tax Season Discount Referral</h3>
+                        <p class="text-gray-600 text-sm mb-8 leading-relaxed">
+                            It is free to become a PYF Affiliate. There is no cost and no upfront or ongoing requirements or qualifications. As a PYF affiliate you can receive referral fees when you share PYF products with others.
+                        </p>
+
+                        <h4 class="font-bold text-brand-dark text-md mb-4">Affiliate Pay</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-sm font-medium text-gray-700">
+                                <i class="fas fa-check-square text-brand-primary text-xl mr-3"></i>
+                                $5 per Tax Season Discount referral.
+                            </li>
+                            <li class="flex items-center text-sm font-medium text-gray-700">
+                                <i class="fas fa-check-square text-brand-primary text-xl mr-3"></i>
+                                Up to $50 monthly for other products.
+                            </li>
+                            <li class="flex items-center text-sm font-medium text-gray-700">
+                                <i class="fas fa-check-square text-brand-primary text-xl mr-3"></i>
+                                Earn by referring other PYF products.
+                            </li>
+                            <li class="flex items-center text-sm font-medium text-gray-700">
+                                <i class="fas fa-check-square text-brand-primary text-xl mr-3"></i>
+                                No cost.
+                            </li>
+                        </ul>
+
+                        <p class="font-bold text-brand-dark text-sm mb-6">
+                            You do not need to purchase a PYF product to become a PYF Affiliate.
+                        </p>
+
+                        <a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" target="_blank" class="bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-4 px-8 rounded shadow-lg transition uppercase text-xs tracking-widest inline-block">
+                            Become an Affiliate
+                        </a>
+                    </div>
+
+                    <div class="h-80 md:h-96">
+                        <img src="Tax-season-discount/Tax Season Discount_Become An Affiliate.jpg" 
+                             alt="Money in Pocket" 
+                             class="rounded-[2rem] shadow-xl w-full h-full object-cover">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-[#F2FFEB]">
+            <div class="container mx-auto px-4 text-center">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6">
+                    Don't Miss This <span class="text-brand-primary">Limited Time Offer</span>
+                </h2>
+
+                <p class="text-gray-700 max-w-3xl mx-auto mb-10 text-lg">
+                    Get professional tax preparation from a national tax firm for just $49. This package is only available during the 2026 tax season (January 1 – April 30).
+                </p>
+
+                <div class="mb-16">
+                    <a href="https://buy.stripe.com/3cIfZa2kiex9gyg4lOcIE02" target="_blank" class="bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-5 px-10 rounded shadow-lg transition uppercase text-sm tracking-widest inline-block transform hover:-translate-y-1">
+                        Start My Access
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div class="flex items-center justify-center bg-[#dcfce7] p-4 rounded-lg">
+                        <i class="fas fa-check-circle text-brand-primary text-xl mr-3"></i>
+                        <span class="text-xs font-bold text-brand-dark">Serviced by a professional tax firm</span>
+                    </div>
+                    <div class="flex items-center justify-center bg-[#dcfce7] p-4 rounded-lg">
+                        <i class="fas fa-check-circle text-brand-primary text-xl mr-3"></i>
+                        <span class="text-xs font-bold text-brand-dark">$1M Liability Insurance</span>
+                    </div>
+                    <div class="flex items-center justify-center bg-[#dcfce7] p-4 rounded-lg">
+                        <i class="fas fa-check-circle text-brand-primary text-xl mr-3"></i>
+                        <span class="text-xs font-bold text-brand-dark">30 Years Experience</span>
+                    </div>
+                    <div class="flex items-center justify-center bg-[#dcfce7] p-4 rounded-lg">
+                        <i class="fas fa-check-circle text-brand-primary text-xl mr-3"></i>
+                        <span class="text-xs font-bold text-brand-dark">Federal & State Filing Included</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4 max-w-5xl text-center">
+                
+                <h3 class="text-2xl font-black text-brand-dark uppercase mb-8 pb-4 border-b border-gray-200 inline-block px-12">
+                    Disclaimer
+                </h3>
+
+                <div class="text-sm text-gray-500 leading-relaxed max-w-6xl mx-auto">
+                    <p>
+                        Information provided for illustrative purposes only and is not legal, tax, or financial advice. Tax preparation, filing, and advisory services are provided by independent third-party professionals, not by Pay Yourself First. Pay Yourself First facilitates access to these services. PYF does not guarantee specific tax outcomes. Consult a professional before acting. Full terms and details at www.payyourselffirst.com
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+   <footer class="relative bg-footer-bg text-white pt-16 pb-6 border-t-4 border-brand-primary">
+        <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+            <img src="Homepage/Footer_general.jpg" class="w-full h-full object-cover grayscale">
+        </div>
+
+        <div class="relative container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Find Us</h3>
+                    <ul class="space-y-6">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-primary text-xl mr-4 w-6"></i>
+                            <span class="text-gray-300 text-sm">+1 (855) 793-2582</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-primary text-xl mr-4 w-6"></i>
+                            <a href="mailto:Service@PayYourselfFirst.com" class="text-gray-300 text-sm hover:text-brand-primary transition">info@payyourselffirst.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Legal</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="terms.html" class="hover:text-brand-primary transition" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-primary transition" target="_blank" >Privacy Policy</a></li>
+                        <li><a href="cookie.html" class="hover:text-brand-primary transition" target="_blank" >Cookie Policy</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-brand-primary transition" target="_blank" >Disclaimer</a></li>
+                        <li><a href="use-policy.html" class="hover:text-brand-primary transition" target="_blank" >Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Quick Links</h3>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                        <li><a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="hover:text-brand-primary transition" target="_blank"> Become an Affiliate</a></li>
+                        <li><a href="packages.html" class="hover:text-brand-primary transition" target="_blank" >Join Now</a></li>
+                        <li><a href="contact-us.html" class="hover:text-brand-primary transition" target="_blank" >Contact Us</a></li>
+                    </ul>
+                    
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/share/1SgQW8W1qQ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/pyfinc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pay_yourself_first_inc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/pay-yourself-first-inc/about/?viewAsMember=true" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p class="mb-2 md:mb-0">Copyright © 2025 - <span class="text-brand-primary">Pay Yourself First</span>. All Rights Reserved.</p>
+                <p>Powered By <span class="text-brand-primary">SapphireLead</span> © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Logic
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) { header.classList.add('header-hidden'); } 
+            else { header.classList.remove('header-hidden'); }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+
+    <button id="backToTopBtn" 
+            onclick="scrollToTop()" 
+            class="fixed bottom-8 right-8 z-50 bg-brand-primary hover:bg-[#2d7a00] text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show/Hide logic based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show after scrolling down 300px
+                backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+                                // Accordion Logic
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('hidden');
+                button.querySelector('i').classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

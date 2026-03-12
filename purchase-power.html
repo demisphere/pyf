@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Yourself First</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                       sans: ["Roboto Flex", 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#389400', 
+                        'brand-dark': '#1c1c1c',
+                        'footer-bg': '#1f2022',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://cdn.pagesense.io/js/payyourselffirst/c2e5673c7d15457d8a0925080101f545.js"></script>
+
+    <style>
+        /* Custom styles for sticky header transition */
+         .sticky-header { transition: transform 0.3s ease-in-out; }
+        .header-hidden { transform: translateY(-100%); }
+        
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+   <div id="main-header" class="fixed top-0 left-0 w-full z-50 sticky-header shadow-md">
+        <div class="bg-brand-dark text-white py-6 text-xs font-semibold">
+            <div class="container mx-auto px-4 flex justify-end items-center space-x-6">
+                <a href="https://payyourselffirst.benefithub.com/Welcome" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <div class="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center text-white mr-2 text-[10px]"><i class="fas fa-dollar-sign"></i></div> DISCOUNT PORTAL
+                </a>
+                <a href="https://backoffice.pyfaffiliates.com/merchants/login.php#login" class="flex items-center hover:text-brand-primary transition" target="_blank">
+                    <i class="fas fa-user text-brand-primary mr-2"></i> AFFILIATE LOGIN
+                </a>
+            </div>
+        </div>
+        <nav class="bg-white py-4">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="index.html"><img src="pyf-logo.svg" alt="Pay Yourself First Logo" class="h-12 object-contain"></a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none"><i class="fas fa-bars"></i></button>
+                <div class="hidden lg:flex items-center space-x-5 text-xs xl:text-sm font-bold text-gray-700 uppercase">
+                    <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                    <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                    <a href="business-support-package.html" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white px-4 py-3 rounded shadow-md hover:shadow-lg hover:opacity-90 transition whitespace-nowrap"> Business Support Package</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden text-sm bg-white border-t mt-4 p-4 flex flex-col space-y-4 font-bold text-gray-700 uppercase">
+                 <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                   <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                <a href="business-support-package.html" class="bg-brand-primary text-white text-center py-3 rounded"> Business Support Package</a>
+            </div>
+        </nav>
+    </div>
+
+
+<header class="container mx-auto px-4 mb-16 mt-48">
+        <div class="relative rounded-[2rem] overflow-hidden h-[500px] md:h-[600px] shadow-2xl group">
+            
+            <img src="Purchase Power/Purchase Power_Hero.jpg" 
+                 alt="Family Shopping" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 md:px-20">
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase leading-tight drop-shadow-md">
+                    Cut Costs. Not Your Lifestyle.
+                </h1>
+                
+                <h2 class="text-lg md:text-2xl font-bold text-white mb-4 uppercase">
+                    Save On What You Already Buy. From Groceries To Getaways. <br> Without Sacrificing Quality.
+                </h2>
+
+                <p class="text-base md:text-lg text-gray-100 mb-8 font-medium leading-relaxed max-w-4xl">
+                    Spending is unavoidable. Overpaying isn't. Purchase Power gives you exclusive discounts on the brands and services you use every day. Keep your lifestyle, lower your bills.
+                </p>
+
+                <div class="inline-block border-2 border-white rounded px-6 py-2 text-white font-bold text-lg mb-8 bg-white/10 backdrop-blur-sm max-w-md">
+                    PRICE: $9.95/month
+                </div>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+                    <a href="https://buy.stripe.com/6oU9AM2kidt5dm43hKcIE06" target="_blank" class="bg-[#4a8a0a] text-white font-bold py-4 px-10 rounded shadow hover:bg-[#389400] transition uppercase text-sm tracking-wide text-center">
+                        Get Purchase Power
+                    </a>
+                   
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Save In 3 Simple <span class="text-brand-primary">Steps</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <div class="bg-[#F2FFEB] rounded-xl p-8 text-center h-full flex flex-col items-center hover:shadow-lg transition">
+                        <div class="w-20 h-20 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-3xl mb-6 shadow-md">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark text-lg mb-2">Step 1: Browse Deals</h3>
+                        <p class="text-sm text-gray-600">Access millions of discounts on brands you already love—no hunting required.</p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] rounded-xl p-8 text-center h-full flex flex-col items-center hover:shadow-lg transition">
+                        <div class="w-20 h-20 bg-[#4a8a0a] rounded-full flex items-center justify-center text-white text-3xl mb-6 shadow-md">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark text-lg mb-2">Step 2: Shop & Save</h3>
+                        <p class="text-sm text-gray-600">Use your deals online or in-store. Discounts apply instantly at checkout.</p>
+                    </div>
+
+                    <div class="bg-[#4a8a0a] rounded-xl p-8 text-center h-full flex flex-col items-center shadow-xl transform md:scale-105">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-brand-primary text-3xl mb-6 shadow-md">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg mb-2">Step 3: Watch Savings Grow</h3>
+                        <p class="text-sm text-white opacity-90">Earn cash back on select purchases. Many users save $1,000–$3,000+ per year.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <div class="text-center max-w-4xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6">
+                        Real <span class="text-brand-primary">Savings</span> For Real <span class="text-brand-primary">Life</span>
+                    </h2>
+                    <p class="text-gray-600 font-medium">
+                        Discounts are everywhere—the problem is finding them. Purchase Power gives you instant access to savings on everything you buy regularly. Shop with confidence knowing you're getting great prices, every time.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-7xl mx-auto">
+                    
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Dining</h3>
+                        <p class="text-xs text-gray-500"> Popular restaurant chains, fine dining, desserts, special order food & gifts</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Groceries</h3>
+                        <p class="text-xs text-gray-500">Groceries, coffee, tea, gourmet foods, wine & beverages, food delivery</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Shopping</h3>
+                        <p class="text-xs text-gray-500">Apparel, shoes, jewelry, toys, gifts, magazines, home & garden, department stores, office supplies, sports gear</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Travel</h3>
+                        <p class="text-xs text-gray-500">Flights, hotels & resorts, vacation packages, cruises, car rentals, RV rentals, transportation, travel insurance</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Hotels & Resorts</h3>
+                        <p class="text-xs text-gray-500">Exclusive hotel and vacation rental deals with cash back at top destinations worldwide</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Car Rentals</h3>
+                        <p class="text-xs text-gray-500">Save 5% to 35% on car and moving truck rentals at most national rental companies</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Financial Wellness</h3>
+                        <p class="text-xs text-gray-500"> Banking, loans & credit, life insurance, investing, retirement planning, estate planning, warranty services </p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Life Essentials</h3>
+                        <p class="text-xs text-gray-500">Medical services, auto insurance, ID protection, child & elder care, home buying & selling</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Automotive</h3>
+                        <p class="text-xs text-gray-500">Auto body & paint, service & repair, oil changes, warranties, refinancing, car buying discounts</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Health & Beauty</h3>
+                        <p class="text-xs text-gray-500">Medical, nutrition, weight loss, health clubs, virtual fitness, fitness equipment, hair & beauty, skin care</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Home & Family</h3>
+                        <p class="text-xs text-gray-500">Furniture, kitchen, bed & bath, appliances, home improvement, tools, moving & storage, babies & kids 🐾 PETS Pet insurance, pet supplies & services</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Recreation</h3>
+                        <p class="text-xs text-gray-500"> Movies & music, books, magazines, golf, sporting events, concerts, theme parks, tours, outdoor adventures, ski & snowboarding </p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Electronics</h3>
+                        <p class="text-xs text-gray-500">Cell phones, computers, tablets, TV & home theater, appliances, printers, internet services, video games, photo services</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Pets</h3>
+                        <p class="text-xs text-gray-500">Pet insurance, pet supplies & services</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Cruises</h3>
+                        <p class="text-xs text-gray-500">Discounts and cash back on popular cruise lines you know and love</p>
+                    </div>
+
+                    <div class="bg-gray-50 hover:bg-white hover:shadow-xl rounded-xl p-6 text-center border border-gray-100 transition group h-full">
+                        <div class="w-12 h-12 bg-[#00695c] rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:bg-brand-primary transition">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="font-bold text-brand-dark uppercase text-sm mb-2">Education & Learning</h3>
+                        <p class="text-xs text-gray-500">Early learning, K-12, higher education, virtual learning, school supplies, student loans</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Popular Ways Users <span class="text-brand-primary">Save</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20">
+                    
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 flex flex-col md:flex-row items-start md:items-center text-left">
+                        <div class="w-full md:w-1/3 mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                            <img src="Purchase Power/Purchase Power_Popular Ways Users Save_Grocery Savings.jpg" 
+                                 alt="Grocery Savings" class="rounded-lg w-full h-32 object-cover">
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-shopping-basket text-brand-primary text-xl mr-3"></i>
+                                <h3 class="font-bold text-brand-dark text-lg">Grocery Savings</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Save on your weekly grocery bill with discounts at major chains plus cash back on everyday essentials.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 flex flex-col md:flex-row items-start md:items-center text-left">
+                        <div class="w-full md:w-1/3 mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Travel Deals" class="rounded-lg w-full h-32 object-cover">
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-suitcase text-brand-primary text-xl mr-3"></i>
+                                <h3 class="font-bold text-brand-dark text-lg">Travel Deals</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Book your next vacation for less. Save on hotels, flights, rental cars, and cruises—with cash back.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 flex flex-col md:flex-row items-start md:items-center text-left">
+                        <div class="w-full md:w-1/3 mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                            <img src="Purchase Power/Purchase Power_Popular Ways Users Save_Dining Discounts.jpg" 
+                                 alt="Dining Discounts" class="rounded-lg w-full h-32 object-cover">
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-utensils text-brand-primary text-xl mr-3"></i>
+                                <h3 class="font-bold text-brand-dark text-lg">Dining Discounts</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Eat out without the financial guilt. Get deals at your favorite restaurants, from fast casual to fine dining.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 flex flex-col md:flex-row items-start md:items-center text-left">
+                        <div class="w-full md:w-1/3 mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                            <img src="Purchase Power/Purchase Power_Popular Ways Users Save_Auto Savings.jpg" 
+                                 alt="Auto Savings" class="rounded-lg w-full h-32 object-cover">
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-car text-brand-primary text-xl mr-3"></i>
+                                <h3 class="font-bold text-brand-dark text-lg">Auto Savings</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                From car purchases to oil changes, save on every aspect of vehicle ownership and maintenance.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-[#F2FFEB]">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-8">
+                    Purchase Power <span class="text-brand-primary">Pays For Itself</span>
+                </h2>
+
+                <p class="text-lg text-gray-800 font-medium leading-relaxed mb-8">
+                    At just $9.95/month, Purchase Power costs $119.40 per year. Most users save $1,000 to $3,000+ annually. That's 8x to 25x return on investment.
+                </p>
+
+                <p class="text-sm text-gray-600 italic font-bold">
+                    Savings vary based on usage and available offers
+                </p>
+
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark uppercase mb-12">
+                    Common <span class="text-brand-primary">Questions</span>
+                </h2>
+
+                <div class="space-y-4">
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Can I get Purchase Power without joining as an affiliate?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Yes.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What does "affiliate enrollment" mean?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            PYF's affiliate program is free and allows you to receive referral fees when you refer others to PYF products. You can enroll as an affiliate with any PYF product at no additional cost, or enroll as an affiliate with no product purchase required. <a href="affiliate-page.html" class="text-brand-primary underline">Learn more</a>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">What types of stores are included?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Everything from national chains to local favorites—groceries, electronics, travel, dining, automotive, health & beauty, and more.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Can I use these discounts with other coupons?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            In many cases, yes! You can often stack our deals with store sales or loyalty programs for even bigger savings.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Does Purchase Power offer cash back on purchases?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Yes. For select offers, you'll earn dollar-for-dollar cash back—putting real money back in your pocket.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">How quickly can I start using the discounts?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Immediately. As soon as you join, you'll have instant access to all available deals.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Are there any restrictions or blackout dates?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Each merchant sets their own terms, but most deals are available year-round with no blackout dates.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Do I need to print coupons?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            No. Most discounts are applied digitally at checkout—online or via the app. Some in-store offers may require showing your phone.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Is there a limit to how many times I can use a discount?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            No. Use your favorite discounts as often as you like throughout the year.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left pr-4">Is Purchase Power available through my employer or organization?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Yes. Purchase Power is available to groups/employers with 3+ members/employees. Contact us to learn more about group enrollment options.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.querySelectorAll('.faq-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    content.classList.toggle('hidden');
+                    button.querySelector('i').classList.toggle('rotate-180');
+                });
+            });
+        </script>
+
+        <section class="py-20 bg-[#F2FFEB]">
+            <div class="container mx-auto px-4 text-center">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-10">
+                    Ready To <span class="text-brand-primary">Join</span> The Smart Shoppers?
+                </h2>
+
+                <div class="mb-16">
+                    <a href="https://buy.stripe.com/6oU9AM2kidt5dm43hKcIE06" target="_blank" class="bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-5 px-10 md:px-16 rounded shadow-lg transition uppercase text-sm tracking-widest inline-block transform hover:-translate-y-1 hover:shadow-xl">
+                        Get Purchase Power
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    
+                    <div class="bg-white/50 backdrop-blur-sm rounded-xl p-4 flex items-center justify-center space-x-3 shadow-sm border border-[#dcfce7]">
+                        <i class="fas fa-check-circle text-brand-primary text-xl"></i>
+                        <span class="font-bold text-brand-dark text-xs md:text-sm">30-Day Money-Back Guarantee</span>
+                    </div>
+
+                    <div class="bg-white/50 backdrop-blur-sm rounded-xl p-4 flex items-center justify-center space-x-3 shadow-sm border border-[#dcfce7]">
+                        <i class="fas fa-check-circle text-brand-primary text-2xl"></i>
+                        <span class="font-bold text-brand-dark text-xs md:text-sm">No Long-Term Contract</span>
+                    </div>
+
+                    <div class="bg-white/50 backdrop-blur-sm rounded-xl p-4 flex items-center justify-center space-x-3 shadow-sm border border-[#dcfce7]">
+                        <i class="fas fa-check-circle text-brand-primary text-2xl"></i>
+                        <span class="font-bold text-brand-dark text-xs md:text-sm">Providing service since 2011</span>
+                    </div>
+
+                    <div class="bg-white/50 backdrop-blur-sm rounded-xl p-4 flex items-center justify-center space-x-3 shadow-sm border border-[#dcfce7]">
+                        <i class="fas fa-check-circle text-brand-primary text-xl"></i>
+                        <span class="font-bold text-brand-dark text-xs md:text-sm">Instant access to Deals</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h3 class="text-2xl font-bold text-brand-dark uppercase mb-8 text-center">Disclaimer</h3>
+                <div class="text-sm text-gray-600 leading-relaxed text-justify space-y-4 border-t border-gray-200 pt-8">
+                    <p>
+                        Purchase Power is a discount shopping program, not insurance. Savings and cash back offers vary by merchant, location, and time. The range of discounts will depend on the retailer, product, and service selected. Purchase Power does not make payments directly to merchants. Users are responsible for all purchase costs but will receive discounts from participating retailers who have contracted with the program.
+                    </p>
+                    <p>
+                        Merchant participation, available offers, and discount amounts are subject to change without notice. Specific savings amounts cannot be guaranteed and will vary based on individual shopping habits and merchant availability in your area. Cash back offers are subject to merchant-specific terms and conditions and may require additional steps to claim.
+                    </p>
+                    <p>
+                        You have the right to cancel within the first 30 days and receive a full refund, less a nominal processing fee. For customer service or to verify participating merchants, call (855) PYF-CLUB or visit our website.
+                    </p>
+                    <p>
+                        Purchase Power is administered by Benefits Hub, LLC. The program and its administrators have no liability for the quality of goods or services provided by participating merchants. All merchant transactions are between the user and the merchant.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer class="relative bg-footer-bg text-white pt-16 pb-6 border-t-4 border-brand-primary">
+        <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+            <img src="Homepage/Footer_general.jpg" class="w-full h-full object-cover grayscale">
+        </div>
+
+        <div class="relative container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Find Us</h3>
+                    <ul class="space-y-6">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-primary text-xl mr-4 w-6"></i>
+                            <span class="text-gray-300 text-sm">+1 (855) 793-2582</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-primary text-xl mr-4 w-6"></i>
+                            <a href="mailto:Service@PayYourselfFirst.com" class="text-gray-300 text-sm hover:text-brand-primary transition">info@payyourselffirst.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Legal</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="terms.html" class="hover:text-brand-primary transition" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-primary transition" target="_blank" >Privacy Policy</a></li>
+                        <li><a href="cookie.html" class="hover:text-brand-primary transition" target="_blank" >Cookie Policy</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-brand-primary transition" target="_blank" >Disclaimer</a></li>
+                        <li><a href="use-policy.html" class="hover:text-brand-primary transition" target="_blank" >Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Quick Links</h3>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                        <li><a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="hover:text-brand-primary transition" target="_blank"> Become an Affiliate</a></li>
+                        <li><a href="packages.html" class="hover:text-brand-primary transition" target="_blank" >Join Now</a></li>
+                        <li><a href="contact-us.html" class="hover:text-brand-primary transition" target="_blank" >Contact Us</a></li>
+                    </ul>
+                    
+                    <div class="flex space-x-3">
+                         <a href="https://www.facebook.com/share/1SgQW8W1qQ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/pyfinc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pay_yourself_first_inc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/pay-yourself-first-inc/about/?viewAsMember=true" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p class="mb-2 md:mb-0">Copyright © 2025 - <span class="text-brand-primary">Pay Yourself First</span>. All Rights Reserved.</p>
+                <p>Powered By <span class="text-brand-primary">SapphireLead</span> © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Logic
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) { header.classList.add('header-hidden'); } 
+            else { header.classList.remove('header-hidden'); }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+
+    <button id="backToTopBtn" 
+            onclick="scrollToTop()" 
+            class="fixed bottom-8 right-8 z-50 bg-brand-primary hover:bg-[#2d7a00] text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show/Hide logic based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show after scrolling down 300px
+                backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Yourself First</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#389400', 
+                        'brand-dark': '#1c1c1c',
+                        'footer-bg': '#1f2022',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://cdn.pagesense.io/js/payyourselffirst/c2e5673c7d15457d8a0925080101f545.js"></script>
+
+    <style>
+        /* Custom styles for sticky header transition */
+         .sticky-header { transition: transform 0.3s ease-in-out; }
+        .header-hidden { transform: translateY(-100%); }
+        
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+   <div id="main-header" class="fixed top-0 left-0 w-full z-50 sticky-header shadow-md">
+        <div class="bg-brand-dark text-white py-6 text-xs font-semibold">
+            <div class="container mx-auto px-4 flex justify-end items-center space-x-6">
+                <a href="#" class="flex items-center hover:text-brand-primary transition">
+                    <div class="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center text-white mr-2 text-[10px]"><i class="fas fa-dollar-sign"></i></div> DISCOUNT PORTAL
+                </a>
+                <a href="#" class="flex items-center hover:text-brand-primary transition">
+                    <i class="fas fa-user text-brand-primary mr-2"></i> AFFILIATE LOGIN
+                </a>
+            </div>
+        </div>
+        <nav class="bg-white py-4">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="index.html"><img src="pyf-logo.svg" alt="Pay Yourself First Logo" class="h-12 object-contain"></a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none"><i class="fas fa-bars"></i></button>
+                <div class="hidden lg:flex items-center space-x-5 text-xs xl:text-sm font-bold text-gray-700 uppercase">
+                    <a href="#" class="text-brand-primary transition">Home</a>
+                    <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                    <a href="business-support-package.html" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white px-4 py-3 rounded shadow-md hover:shadow-lg hover:opacity-90 transition whitespace-nowrap"> Business Support Package</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden text-sm bg-white border-t mt-4 p-4 flex flex-col space-y-4 font-bold text-gray-700 uppercase">
+                 <a href="#" class="text-brand-primary transition">Home</a>
+                   <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="hover:text-brand-primary transition">Contact Us</a>
+                <a href="income-power-pro.html" class="bg-brand-primary text-white text-center py-3 rounded">Income Power Pro</a>
+            </div>
+        </nav>
+    </div>
+
+ <header class="container mx-auto px-4 mb-16 mt-48">
+        <div class="relative rounded-[2rem] overflow-hidden h-[500px] md:h-[600px] shadow-2xl group">
+            
+            <img src="Free-affiliate-page/Affiliate Page_Hero.jpg" 
+                 alt="Money Background" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+           <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-20 max-w-6xl">
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase leading-tight drop-shadow-md">
+                    Start Earning Referral Fees.<br>
+                    <span class="text-[#75C400]">Free To Join.</span>
+                </h1>
+                
+                <p class="text-base md:text-xl text-gray-100 mb-10 font-medium leading-relaxed max-w-4xl">
+                    Join as a Free Affiliate and earn referral fees promoting Pay Yourself First.<br>
+                    <span class="font-bold text-white">No investment required.</span>
+                </p>
+                
+                <div>
+                    <a href="#" class="bg-[#75C400] text-white font-bold py-4 px-10 rounded shadow hover:bg-[#389400] transition uppercase text-sm tracking-wide inline-block">
+                        Become An Affiliate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <div class="text-center max-w-4xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-6">
+                        What You <span class="text-brand-primary">Get As An Affiliate</span>
+                    </h2>
+                    <p class="text-gray-600 font-medium text-lg">
+                        The Affiliate program includes tools and resources to allow you to begin sharing Pay Yourself First. <br>
+                        As a Pay Yourself First Affiliate you can earn referral fees by sharing PYF products.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-[#F2FFEB] p-8 rounded-2xl text-center flex flex-col items-center hover:shadow-lg transition">
+                        <div class="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center text-white text-3xl mb-6 shadow-md">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-4">Marketing Tools</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Personal referral link and back-office access to track your referral activity and promotional efforts. Marketing materials to allow you to share Pay Yourself First compliantly.
+                        </p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-2xl text-center flex flex-col items-center hover:shadow-lg transition">
+                        <div class="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center text-white text-3xl mb-6 shadow-md">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-4">Pay Yourself First Certification</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Quick training on how to promote PYF compliantly.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-primary p-8 rounded-2xl text-center flex flex-col items-center shadow-xl transform md:scale-105">
+                        <div class="w-20 h-20 bg-[#F2FFEB] rounded-full flex items-center justify-center text-brand-primary text-3xl mb-6 shadow-md">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Affiliate Resources</h3>
+                        <p class="text-white text-opacity-90 text-sm leading-relaxed mb-4">
+                            Training materials and promotional guidance.
+                        </p>
+                        <p class="text-white font-bold text-xs uppercase tracking-wide bg-[#2d7a00] py-2 px-4 rounded-full">
+                            As an Affiliate you have no meeting requirements
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Three Simple <span class="text-brand-primary">Steps To Start</span>
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                    
+                    <div class="space-y-8">
+                        
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center text-white text-3xl shadow-lg z-10 border-4 border-white">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="bg-[#F2FFEB] flex-grow -ml-10 pl-14 pr-8 py-6 rounded-r-2xl shadow-sm">
+                                <h4 class="font-bold text-brand-dark text-lg">Step 1: Join Free</h4>
+                                <p class="text-sm text-gray-600">Complete your registration—no credit card required</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center text-white text-3xl shadow-lg z-10 border-4 border-white">
+                                <i class="fas fa-id-card-alt"></i>
+                            </div>
+                            <div class="bg-[#F2FFEB] flex-grow -ml-10 pl-14 pr-8 py-6 rounded-r-2xl shadow-sm">
+                                <h4 class="font-bold text-brand-dark text-lg">Step 2: Get PYF Certified</h4>
+                                <p class="text-sm text-gray-600">Take our 15-30 minute training to learn the basics</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 w-20 h-20 bg-[#dcfce7] rounded-full flex items-center justify-center text-brand-primary text-3xl shadow-lg z-10 border-4 border-white">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="bg-brand-primary flex-grow -ml-10 pl-14 pr-8 py-6 rounded-r-2xl shadow-lg origin-left">
+                                <h4 class="font-bold text-white text-lg">Step 3: Start Sharing</h4>
+                                <p class="text-sm text-white text-opacity-90">Share PYF online or offline and start earning referral fees.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pl-10">
+                            <a href="#" class="bg-[#75C400] text-white font-bold py-4 px-10 rounded shadow hover:bg-[#389400] transition uppercase text-sm tracking-wide inline-block">
+                                Become An Affiliate
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="h-full min-h-[500px] relative">
+                        <img src="Free-affiliate-page/Affiliate Page_3 Simple Steps.jpg" 
+                             alt="Excited Affiliate" 
+                             class="rounded-[2rem] shadow-2xl w-full h-full object-cover">
+                        <div class="absolute bottom-10 right-10 bg-[#389400] text-white p-4 rounded-xl shadow-lg transform rotate-[-5deg]">
+                            <p class="font-black text-xl uppercase leading-none text-center">Affiliate<br>Program</p>
+                            <div class="flex justify-center mt-2"><i class="fas fa-arrow-up text-2xl"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-4xl">
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-brand-dark uppercase mb-12">
+                    Common <span class="text-brand-primary">Questions</span>
+                </h2>
+
+                <div class="space-y-4">
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left">Is the Free Affiliate plan really free?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Yes. There is no investment to be a Free PYF Affiliate. You can join and start promoting PYF today.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left">How do I earn money as a Free Affiliate?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            You earn one-time referral fees when people join PYF through your referral. No purchase is required to be an affiliate.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left">Can I become a Pro Affiliate later?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            Absolutely. You can start as a Free Affiliate and become a Pro Affiliate when you’re ready to maximize your tax deductions and build residual income.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+                        <button class="faq-btn w-full flex justify-between items-center p-6 hover:bg-gray-50 transition focus:outline-none">
+                            <span class="font-bold text-gray-900 text-left">Is there a commitment or contract?</span>
+                            <i class="fas fa-chevron-down text-brand-primary transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 border-t border-gray-100 text-gray-600 text-sm leading-relaxed">
+                            None. You can stay as a Free Affiliate as long as you want and become a Pro Affiliate at any time.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+   <footer class="relative bg-footer-bg text-white pt-16 pb-6 border-t-4 border-brand-primary">
+        <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+            <img src="Homepage/Footer_general.jpg" class="w-full h-full object-cover grayscale">
+        </div>
+
+        <div class="relative container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Find Us</h3>
+                    <ul class="space-y-6">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-primary text-xl mr-4 w-6"></i>
+                            <span class="text-gray-300 text-sm">+1 (855) 793-2582</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-primary text-xl mr-4 w-6"></i>
+                            <a href="mailto:Service@PayYourselfFirst.com" class="text-gray-300 text-sm hover:text-brand-primary transition">info@payyourselffirst.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Legal</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="terms.html" class="hover:text-brand-primary transition" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-primary transition" target="_blank" >Privacy Policy</a></li>
+                        <li><a href="cookie.html" class="hover:text-brand-primary transition" target="_blank" >Cookie Policy</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-brand-primary transition" target="_blank" >Disclaimer</a></li>
+                        <li><a href="use-policy.html" class="hover:text-brand-primary transition" target="_blank" >Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Quick Links</h3>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                        <li><a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="hover:text-brand-primary transition" target="_blank"> Become an Affiliate</a></li>
+                        <li><a href="packages.html" class="hover:text-brand-primary transition" target="_blank" >Join Now</a></li>
+                        <li><a href="contact-us.html" class="hover:text-brand-primary transition" target="_blank" >Contact Us</a></li>
+                    </ul>
+                    
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/share/1SgQW8W1qQ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/pyfinc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pay_yourself_first_inc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/pay-yourself-first-inc/about/?viewAsMember=true" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p class="mb-2 md:mb-0">Copyright © 2025 - <span class="text-brand-primary">Pay Yourself First</span>. All Rights Reserved.</p>
+                <p>Powered By <span class="text-brand-primary">SapphireLead</span> © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Logic
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) { header.classList.add('header-hidden'); } 
+            else { header.classList.remove('header-hidden'); }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+
+    <button id="backToTopBtn" 
+            onclick="scrollToTop()" 
+            class="fixed bottom-8 right-8 z-50 bg-brand-primary hover:bg-[#2d7a00] text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show/Hide logic based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show after scrolling down 300px
+                backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+                // Accordion Logic
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('hidden');
+                button.querySelector('i').classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
+
+

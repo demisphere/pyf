@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Yourself First - Contact Us</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                       sans: ["Roboto Flex", 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#389400', 
+                        'brand-dark': '#1c1c1c',
+                        'footer-bg': '#1f2022',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://cdn.pagesense.io/js/payyourselffirst/c2e5673c7d15457d8a0925080101f545.js"></script>
+
+    <script src="js/validation.js"></script>
+
+    <style>
+        /* Custom styles for sticky header transition */
+         .sticky-header { transition: transform 0.3s ease-in-out; }
+        .header-hidden { transform: translateY(-100%); }
+        
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+   <div id="main-header" class="fixed top-0 left-0 w-full z-50 sticky-header shadow-md">
+        <div class="bg-brand-dark text-white py-6 text-xs font-semibold">
+            <div class="container mx-auto px-4 flex justify-end items-center space-x-6">
+                <a href="#" class="flex items-center hover:text-brand-primary transition">
+                    <div class="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center text-white mr-2 text-[10px]"><i class="fas fa-dollar-sign"></i></div> DISCOUNT PORTAL
+                </a>
+                <a href="#" class="flex items-center hover:text-brand-primary transition">
+                    <i class="fas fa-user text-brand-primary mr-2"></i> AFFILIATE LOGIN
+                </a>
+            </div>
+        </div>
+        <nav class="bg-white py-4">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="index.html"><img src="pyf-logo.svg" alt="Pay Yourself First Logo" class="h-12 object-contain"></a>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-brand-dark focus:outline-none"><i class="fas fa-bars"></i></button>
+                <div class="hidden lg:flex items-center space-x-5 text-xs xl:text-sm font-bold text-gray-700 uppercase">
+                    <a href="index.html" class="hover:text-brand-primary transition">Home</a>
+                    <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="text-brand-primary transition">Contact Us</a>
+                    <a href="business-support-package.html" class="bg-gradient-to-r from-[#389400] to-[#75C400] text-white px-4 py-3 rounded shadow-md hover:shadow-lg hover:opacity-90 transition whitespace-nowrap"> Business Support Package</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden text-sm bg-white border-t mt-4 p-4 flex flex-col space-y-4 font-bold text-gray-700 uppercase">
+                 <a href="#" class="text-brand-primary transition">Home</a>
+                   <a href="how-we-help-you.html" class="hover:text-brand-primary transition">How We Help You</a>
+                    <a href="packages.html" class="hover:text-brand-primary transition">Packages</a>
+                    <a href="tax-season-discount.html" class="border-2 border-gray-800 px-3 py-2 hover:bg-gray-800 hover:text-white transition">Tax Season Discount</a>
+                    <a href="support.html" class="hover:text-brand-primary transition">Support</a>
+                    <a href="about-us.html" class="hover:text-brand-primary transition">About Us</a>
+                    <a href="contact-us.html" class="text-brand-primary transition">Contact Us</a>
+                <a href="business-support-package.html" class="bg-brand-primary text-white text-center py-3 rounded"> Business Support Package</a>
+            </div>
+        </nav>
+    </div>
+
+<header class="container mx-auto px-4 mb-16 mt-48">
+        <div class="relative rounded-[2rem] overflow-hidden h-[400px] md:h-[500px] shadow-2xl group">
+            
+            <img src="Contact-us/Contact Us_Hero.jpg" 
+                 alt="Contact Us Team" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+           <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-20 max-w-4xl">
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase leading-tight drop-shadow-md">
+                    Get In Touch With Us
+                </h1>
+                
+                <p class="text-base md:text-xl text-gray-100 font-medium leading-relaxed max-w-2xl">
+                   Whether you have questions about our services, need support, or want to
+explore business partnerships, we're here to help.
+                </p>
+                
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <form action='https://forms.zohopublic.com/payyourselffirst1/form/PYFMainSiteContactUs/formperma/c6Fb3hI5V4Qrp9CMD5OPrutVAxOgF5v8wy10YwxFd8A/htmlRecords/submit' 
+      name='form' 
+      method='POST' 
+      onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' 
+      accept-charset='UTF-8' 
+      enctype='multipart/form-data' 
+      id='form' 
+      class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
+
+    <input type="hidden" name="zf_referrer_name" value="">
+    <input type="hidden" name="zf_redirect_url" value="">
+    <input type="hidden" name="zc_gad" value="">
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark uppercase mb-8 text-center">
+        Contact <span class="text-brand-primary">Us</span>
+    </h2>
+    
+    <div class="space-y-6">
+        
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Name <span class="text-red-500">*</span></label>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="First Name" 
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#389400] focus:border-[#389400] focus:outline-none transition text-gray-800 bg-gray-50 hover:bg-white" />
+                </div>
+                <div>
+                    <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder="Last Name" 
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#389400] focus:border-[#389400] focus:outline-none transition text-gray-800 bg-gray-50 hover:bg-white" />
+                </div>
+            </div>
+            <p id="Name_error" class="zf-errorMessage text-red-500 text-xs mt-2 font-medium" style="display:none;">Invalid value</p>
+        </div>
+
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Email <span class="text-red-500">*</span></label>
+            <input type="text" name="Email" checktype="c5" value="" maxlength="255" fieldType="9" placeholder="Enter your email address" 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#389400] focus:border-[#389400] focus:outline-none transition text-gray-800 bg-gray-50 hover:bg-white" />
+            <p id="Email_error" class="zf-errorMessage text-red-500 text-xs mt-2 font-medium" style="display: none;">Invalid value</p>
+        </div>
+
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Phone</label>
+            <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" maxlength="20" checktype="c7" value="" phoneFormat="1" isCountryCodeEnabled="false" fieldType="11" id="international_PhoneNumber_countrycode" valType="number" phoneFormatType="1" placeholder="Phone Number" 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#389400] focus:border-[#389400] focus:outline-none transition text-gray-800 bg-gray-50 hover:bg-white" />
+            <p id="PhoneNumber_error" class="zf-errorMessage text-red-500 text-xs mt-2 font-medium" style="display:none;">Invalid value</p>
+        </div>
+
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Reason For Contact</label>
+            <select name="Dropdown" checktype="c1" 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#389400] focus:border-[#389400] focus:outline-none transition text-gray-800 bg-gray-50 hover:bg-white cursor-pointer">
+                <option selected="true" value="-Select-">-Select-</option>
+                <option value="Billing Question">Billing Question</option>
+                <option value="Technical Question">Technical Question</option>
+                <option value="Product Question">Product Question</option>
+                <option value="Affiliate Question">Affiliate Question</option>
+                <option value="Referral Fee Question">Referral Fee Question</option>
+                <option value="Business Inquiry">Business Inquiry</option>
+                <option value="General Inquiry">General Inquiry</option>
+            </select>
+            <p id="Dropdown_error" class="zf-errorMessage text-red-500 text-xs mt-2 font-medium" style="display:none;">Invalid value</p>
+        </div>
+
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Message Box</label>
+            <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder="How can we help you?" rows="4" 
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#389400] focus:border-[#389400] focus:outline-none transition text-gray-800 bg-gray-50 hover:bg-white resize-y"></textarea>
+            <p id="MultiLine_error" class="zf-errorMessage text-red-500 text-xs mt-2 font-medium" style="display: none;">Invalid value</p>
+        </div>  
+
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">How Did You Hear About Us?</label>
+            <select name="Dropdown1" checktype="c1" 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#389400] focus:border-[#389400] focus:outline-none transition text-gray-800 bg-gray-50 hover:bg-white cursor-pointer">
+                <option selected="true" value="-Select-">-Select-</option>
+                <option value="Friend/Family">Friend/Family</option>
+                <option value="Pay Yourself First Affiliate">Pay Yourself First Affiliate</option>
+                <option value="Online Ad">Online Ad</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Search Engine">Search Engine</option>
+                <option value="Flyer">Flyer</option>
+            </select>
+            <p id="Dropdown1_error" class="zf-errorMessage text-red-500 text-xs mt-2 font-medium" style="display:none;">Invalid value</p>
+        </div>
+
+        <div class="flex items-start bg-[#F2FFEB] p-4 rounded-lg border border-[#dcfce7] mt-4">
+            <div class="flex items-center h-5 mt-1">
+                <input type="checkbox" checktype="c1" id="DecisionBox" name="DecisionBox" 
+                       class="w-5 h-5 text-[#389400] border-gray-300 rounded focus:ring-[#389400] cursor-pointer" />
+            </div>
+            <div class="ml-3">
+                <label for="DecisionBox" class="font-bold text-brand-dark cursor-pointer text-sm">
+                    Please Check <span class="text-red-500">*</span>
+                </label>
+                <p class="text-gray-600 text-xs mt-1 leading-relaxed">
+                    I consent to receive responses to my inquiry via email and, if I provided my phone number, by phone. I can opt out of promotional communications at any time.
+                </p>
+                <p id="DecisionBox_error" class="zf-errorMessage text-red-500 text-xs mt-1 font-medium" style="display: none;">Invalid value</p>
+            </div>
+        </div>
+
+        <div class="pt-4 text-center">
+            <button type="submit" class="w-full md:w-auto bg-[#4a8a0a] hover:bg-[#389400] text-white font-bold py-4 px-12 rounded shadow-lg transition uppercase text-sm tracking-widest inline-block transform hover:-translate-y-1">
+                Submit Message
+            </button>
+        </div>
+
+    </div>
+</form>
+
+<script type="text/javascript">
+    var dateAndMonthRegexFormateArray = zf_SetDateAndMonthRegexBasedOnDateFormate('dd-MMM-yyyy');
+    var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
+    var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);
+    var zf_MandArray = [ "Name_First", "Name_Last", "Email", "DecisionBox"]; 
+    var zf_FieldArray = [ "Name_First", "Name_Last", "Email", "PhoneNumber_countrycode", "Dropdown", "MultiLine", "Dropdown1", "DecisionBox"]; 
+    var isSalesIQIntegrationEnabled = false;
+    var salesIQFieldsArray = [];
+</script>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark uppercase mb-12">
+                    PYF <span class="text-brand-primary">Support</span> Email
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 max-w-6xl mx-auto">
+                    <div class="bg-[#F2FFEB] rounded-lg p-8 text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                            <i class="fas fa-at"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-900">
+                            Email address: <a href="mailto:service@payyourselffirst.com" class="hover:text-brand-primary">service@payyourselffirst.com</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] rounded-lg p-8 text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-900">
+                            Expected response time: 1-2 business days
+                        </p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] rounded-lg p-8 text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                            <i class="fas fa-business-time"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-900">
+                            Support hours: 9am - 5pm ET
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark uppercase mb-12">
+                    Helpful <span class="text-brand-primary">Service Links</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-6xl mx-auto">
+                    <div class="bg-[#F2FFEB] rounded-lg p-8 text-center hover:shadow-lg transition group cursor-pointer">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:bg-brand-primary transition">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-900">
+                            Link to <a href="support.html" target="_blank" class="text-[#3498db] hover:underline">Support / FAQ Page</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] rounded-lg p-8 text-center hover:shadow-lg transition group cursor-pointer">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:bg-brand-primary transition">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-900">
+                            Link to <a href="packages.html" target="_blank" class="text-[#3498db] hover:underline">Package Overview</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] rounded-lg p-8 text-center hover:shadow-lg transition group cursor-pointer">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:bg-brand-primary transition">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-900">
+                            Link to <a href="affiliate-page.html" target="_blank" class="text-[#3498db] hover:underline">Affiliate Support Section</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="https://payyourselffirst.benefithub.com/welcome/" class="bg-[#66b510] hover:bg-[#4a8a0a] text-white font-bold py-4 px-8 rounded shadow text-sm uppercase text-center transition">
+                        Customer Portal Login
+                    </a>
+                    <a href="https://backoffice.pyfaffiliates.com/merchants/login.php#login
+" target="_blank" class="bg-[#66b510] hover:bg-[#4a8a0a] text-white font-bold py-4 px-8 rounded shadow text-sm uppercase text-center transition">
+                        Affiliate Portal Login
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-[#F2FFEB]">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark uppercase mb-16">
+                    Need Help With A <span class="text-brand-primary">Service Provider?</span>
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                    
+                    <div>
+                        <p class="text-gray-700 mb-6 font-medium">
+                            Some PYF plans include services delivered by licensed professionals through third-party partner networks.
+                        </p>
+                        <p class="text-gray-700 mb-4 font-medium">
+                            If you need assistance with:
+                        </p>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-900 font-bold">
+                                <i class="fas fa-circle text-[#1c4a00] text-[10px] mr-3"></i> Finding a participating provider
+                            </li>
+                            <li class="flex items-center text-gray-900 font-bold">
+                                <i class="fas fa-circle text-[#1c4a00] text-[10px] mr-3"></i> Scheduling an appointment
+                            </li>
+                            <li class="flex items-center text-gray-900 font-bold">
+                                <i class="fas fa-circle text-[#1c4a00] text-[10px] mr-3"></i> Provider-specific questions
+                            </li>
+                            <li class="flex items-center text-gray-900 font-bold">
+                                <i class="fas fa-circle text-[#1c4a00] text-[10px] mr-3"></i> Service quality concerns
+                            </li>
+                        </ul>
+
+                        <p class="text-gray-700 mb-8 font-medium">
+                            Please contact us using the form above, and we'll help coordinate with the appropriate provider network.
+                        </p>
+
+                        <a href="#" class="bg-[#66b510] hover:bg-[#4a8a0a] text-white font-bold py-3 px-8 rounded shadow text-xs uppercase inline-block transition">
+                            Go To Form
+                        </a>
+                    </div>
+
+                    <div class="h-full min-h-[400px]">
+                        <img src="Contact-us/Contact Us_Need help with a service provider.jpg" 
+                             alt="Service Provider Help" 
+                             class="rounded-[2rem] shadow-xl w-full h-full object-cover">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="relative bg-white">
+            
+            <div class="relative h-[400px] w-full">
+                <img src="Contact-us/Contact Us_Mailing Address.jpg" 
+                     alt="Map Background" 
+                     class="w-full h-full object-cover grayscale opacity-60">
+                
+                <div class="absolute inset-0 bg-[#064e3b] mix-blend-multiply opacity-90"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#1c4a00] to-transparent opacity-80"></div>
+
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                    <i class="fas fa-map-marker-alt text-yellow-400 text-6xl mb-4 drop-shadow-lg animate-bounce"></i>
+                    <h2 class="text-3xl font-extrabold uppercase mb-4 tracking-wide">Mailing Address</h2>
+                    <p class="text-lg font-medium leading-relaxed">
+                        Pay Yourself First<br>
+                        107 S. West Street, Suite 557<br>
+                        Alexandria, VA 22314<br>
+                        Correspondence Only
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-16 md:py-24">
+                
+                <div class="text-center max-w-5xl mx-auto mb-16">
+                    <h2 class="text-2xl font-bold text-brand-dark leading-relaxed">
+                        We’re committed to making your experience with Pay Yourself First as smooth and supportive as possible. If you need help, don’t hesitate to reach out.
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <div class="bg-[#F2FFEB] p-8 rounded-lg flex flex-col items-center text-center h-full">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-800">
+                            Please Allow 1-2 Business Days For A Response
+                        </p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-lg flex flex-col items-center text-center h-full">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-stop"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-800">
+                           PYF Cannot and Does Not Provide Tax, Legal, or Medical Advice
+                        </p>
+                    </div>
+
+                    <div class="bg-[#F2FFEB] p-8 rounded-lg flex flex-col items-center text-center h-full">
+                        <div class="w-16 h-16 bg-[#1c4a00] rounded-full flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-flag-usa"></i>
+                        </div>
+                        <p class="text-sm font-bold text-gray-800">
+                            Provider Availability Varies By State
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+     <footer class="relative bg-footer-bg text-white pt-16 pb-6 border-t-4 border-brand-primary">
+        <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+            <img src="Homepage/Footer_general.jpg" class="w-full h-full object-cover grayscale">
+        </div>
+
+        <div class="relative container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Find Us</h3>
+                    <ul class="space-y-6">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-primary text-xl mr-4 w-6"></i>
+                            <span class="text-gray-300 text-sm">+1 (855) 793-2582</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-primary text-xl mr-4 w-6"></i>
+                            <a href="mailto:Service@PayYourselfFirst.com" class="text-gray-300 text-sm hover:text-brand-primary transition">info@payyourselffirst.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Legal</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="terms.html" class="hover:text-brand-primary transition" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-primary transition" target="_blank" >Privacy Policy</a></li>
+                        <li><a href="cookie.html" class="hover:text-brand-primary transition" target="_blank" >Cookie Policy</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-brand-primary transition" target="_blank" >Disclaimer</a></li>
+                        <li><a href="use-policy.html" class="hover:text-brand-primary transition" target="_blank" >Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-gray-600 inline-block w-full">Quick Links</h3>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                        <li><a href="https://backoffice.pyfaffiliates.com/affiliates/signup.php#SignupForm" class="hover:text-brand-primary transition" target="_blank"> Become an Affiliate</a></li>
+                        <li><a href="packages.html" class="hover:text-brand-primary transition" target="_blank" >Join Now</a></li>
+                        <li><a href="contact-us.html" class="hover:text-brand-primary transition" target="_blank" >Contact Us</a></li>
+                    </ul>
+                    
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/share/1SgQW8W1qQ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/pyfinc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                         <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pay_yourself_first_inc" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/pay-yourself-first-inc/about/?viewAsMember=true" target="_blank" class="w-10 h-10 rounded-full bg-brand-primary hover:bg-white text-brand-dark hover:text-brand-primary flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p class="mb-2 md:mb-0">Copyright © 2025 - <span class="text-brand-primary">Pay Yourself First</span>. All Rights Reserved.</p>
+                <p>Powered By <span class="text-brand-primary">SapphireLead</span> © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Logic
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) { header.classList.add('header-hidden'); } 
+            else { header.classList.remove('header-hidden'); }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+
+    <button id="backToTopBtn" 
+            onclick="scrollToTop()" 
+            class="fixed bottom-8 right-8 z-50 bg-brand-primary hover:bg-[#2d7a00] text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show/Hide logic based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show after scrolling down 300px
+                backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTopBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
