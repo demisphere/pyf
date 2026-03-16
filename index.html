@@ -356,64 +356,116 @@ expenses, and build an additional income stream.
     </section>
 
 
-    <section class="py-16 bg-white relative group">
+    <section class="py-20 bg-gray-50 relative group">
         <div class="container mx-auto px-4">
             
-            <h2 class="text-2xl md:text-3xl font-extrabold text-center uppercase mb-12 text-brand-dark">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center uppercase mb-16 text-brand-dark">
                 Real People. <span class="text-brand-primary">Real Results.</span>
             </h2>
 
             <div class="relative max-w-6xl mx-auto">
                 
-                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 bg-white text-brand-primary hover:bg-brand-primary hover:text-white border-2 border-brand-primary w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all opacity-0 pointer-events-none" onclick="scrollSlider(-1)">
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 lg:-translate-x-12 z-20 bg-white text-brand-primary hover:bg-brand-primary hover:text-white border-2 border-brand-primary w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 opacity-0 pointer-events-none" onclick="scrollSlider(-1)">
                     <i class="fas fa-arrow-left"></i>
                 </button>
 
-                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 bg-brand-primary text-white hover:bg-[#75C400] w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all" onclick="scrollSlider(1)">
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 lg:translate-x-12 z-20 bg-brand-primary text-white hover:bg-[#2c7500] w-12 h-12 rounded-full flex items-center justify-center shadow-xl transition-all duration-300" onclick="scrollSlider(1)">
                     <i class="fas fa-arrow-right"></i>
                 </button>
 
-                <div id="sliderContainer" class="flex space-x-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+                <div id="sliderContainer" class="flex space-x-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-8 pt-4 px-2 items-stretch" style="scrollbar-width: none; -ms-overflow-style: none;">
                     
-                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
-                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
-                            "This program helped me keep more of what I earn. I never realized how much I was overpaying."
-                        </p>
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-white p-8 md:p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100 snap-start flex flex-col justify-between relative overflow-hidden group hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] transition-shadow duration-300 h-auto">
+                        
+                        <i class="fas fa-quote-right absolute -bottom-6 -right-6 text-9xl text-brand-primary opacity-5 group-hover:opacity-10 transition-opacity duration-300"></i>
+
+                        <div>
+                            <div class="flex space-x-1 text-yellow-400 text-sm mb-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 text-base md:text-lg italic font-medium leading-relaxed relative z-10">
+                                "Pay Yourself First shifted my mindset from a consumer to a CEO. A person who owns their own business."
+                            </p>
+                        </div>
+
+                        <div class="mt-10 flex items-center relative z-10">
+                            <div class="w-12 h-12 rounded-full bg-[#F2FFEB] flex items-center justify-center text-brand-primary font-bold text-lg border border-[#dcfce7]">
+                                DT
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-brand-dark">D. Thomas</h4>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mt-0.5">Verified Member</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
-                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
-                            "I finally understand how to use tax deductions the right way. The support team is incredible."
-                        </p>
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-white p-8 md:p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100 snap-start flex flex-col justify-between relative overflow-hidden group hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] transition-shadow duration-300 h-auto">
+                        
+                        <i class="fas fa-quote-right absolute -bottom-6 -right-6 text-9xl text-brand-primary opacity-5 group-hover:opacity-10 transition-opacity duration-300"></i>
+
+                        <div>
+                            <div class="flex space-x-1 text-yellow-400 text-sm mb-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 text-base md:text-lg italic font-medium leading-relaxed relative z-10">
+                                "I've saved much more money using Pay Yourself First than what I pay for the subscription."
+                            </p>
+                        </div>
+
+                        <div class="mt-10 flex items-center relative z-10">
+                            <div class="w-12 h-12 rounded-full bg-[#F2FFEB] flex items-center justify-center text-brand-primary font-bold text-lg border border-[#dcfce7]">
+                                CW
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-brand-dark">C. Wheeler</h4>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mt-0.5">Verified Member</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
-                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
-                            "The business coaching alone was worth the investment. My side income has doubled in 6 months."
-                        </p>
-                    </div>
+                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-white p-8 md:p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100 snap-start flex flex-col justify-between relative overflow-hidden group hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] transition-shadow duration-300 h-auto">
+                        
+                        <i class="fas fa-quote-right absolute -bottom-6 -right-6 text-9xl text-brand-primary opacity-5 group-hover:opacity-10 transition-opacity duration-300"></i>
 
-                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
-                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
-                            "A complete game changer for my family's finances. We are finally saving for our future."
-                        </p>
-                    </div>
+                        <div>
+                            <div class="flex space-x-1 text-yellow-400 text-sm mb-6">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 text-base md:text-lg italic font-medium leading-relaxed relative z-10">
+                                "Pay Yourself First changed my position from owing taxes every year to getting a larger refund. In the short-term I can instantly posture myself into a better tax outcome this year. I can instantly use business owner deductions for my own personal tax account this year."
+                            </p>
+                        </div>
 
-                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
-                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
-                            "Legal support gave me peace of mind when setting up my LLC. Highly recommended!"
-                        </p>
-                    </div>
-
-                    <div class="min-w-[100%] md:min-w-[calc(50%-12px)] bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 snap-start flex flex-col justify-center text-center h-64">
-                        <p class="text-gray-800 text-lg italic font-medium leading-relaxed">
-                            "The discount platform saves me about $200 a month on things I was buying anyway."
-                        </p>
+                        <div class="mt-10 flex items-center relative z-10">
+                            <div class="w-12 h-12 rounded-full bg-[#F2FFEB] flex items-center justify-center text-brand-primary font-bold text-lg border border-[#dcfce7]">
+                                MM
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-brand-dark">M. Moore</h4>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mt-0.5">Verified Member</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
+
+        <style>
+            #sliderContainer::-webkit-scrollbar { display: none; }
+        </style>
 
         <script>
             const slider = document.getElementById('sliderContainer');
@@ -428,6 +480,7 @@ expenses, and build an additional income stream.
 
             // Arrow Visibility Logic
             function updateArrows() {
+                // Add a small buffer (e.g., 2px) to account for decimal pixel rounding issues in some browsers
                 const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
                 
                 // Toggle Left Arrow
