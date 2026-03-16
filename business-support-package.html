@@ -289,26 +289,172 @@
             </div>
         </section>
 
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4 max-w-6xl text-center">
-                
-                <h2 class="text-3xl font-extrabold text-brand-dark uppercase mb-8">
+<section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            
+            <div class="max-w-5xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold uppercase mb-6 text-brand-dark tracking-wide">
                     Testimonials
                 </h2>
-                
-                <p class="text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+                <p class="text-base md:text-lg text-gray-600 leading-relaxed">
                     Since 2011 Pay Yourself First has helped W-2 employees, independent contractors, and entrepreneurs legally reduce tax liability and build compliant home-based businesses. Our affiliates range from teachers and government employees to corporate professionals — all learning to leverage the tax code the way business owners do.
                 </p>
+            </div>
 
-                <div class="bg-[#F2FFEB] rounded-2xl h-64 flex items-center justify-center border border-[#dcfce7] mb-20">
-                    <div class="text-brand-primary opacity-50 font-bold uppercase tracking-widest">
-                        <i class="fas fa-quote-left text-4xl mb-4 block"></i>
-                        Testimonial Slider / Video Content Goes Here
+            <div class="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] bg-black aspect-video group" id="videoContainer">
+                
+                <video id="pyfVideo" class="w-full h-full object-cover cursor-pointer" src="video/Moore Testimonial_Clipped.mp4" playsinline preload="metadata" onclick="togglePlay()"></video>
+
+                <div id="bigPlayBtn" class="absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-300">
+                    <div class="w-20 h-20 bg-brand-primary/90 rounded-full flex items-center justify-center text-white text-3xl pl-1 shadow-lg backdrop-blur-sm">
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
 
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4 md:p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-3">
+                    
+                    <div class="w-full flex items-center">
+                        <input type="range" id="progressBar" class="w-full h-1.5 bg-gray-600 rounded-lg appearance-none cursor-pointer accent-brand-primary" value="0" min="0" max="100" step="0.1">
+                    </div>
+
+                    <div class="flex justify-between items-center text-white">
+                        
+                        <div class="flex items-center space-x-4 md:space-x-6 text-lg md:text-xl">
+                            <button id="playPauseBtn" class="hover:text-brand-primary transition transform hover:scale-110 focus:outline-none" onclick="togglePlay()" title="Play/Pause">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="hover:text-brand-primary transition transform hover:scale-110 focus:outline-none" onclick="skip(-10)" title="Rewind 10s">
+                                <i class="fas fa-undo"></i> <span class="text-xs font-bold -ml-1">10</span>
+                            </button>
+                            <button class="hover:text-brand-primary transition transform hover:scale-110 focus:outline-none" onclick="skip(10)" title="Skip 10s">
+                                <i class="fas fa-redo"></i> <span class="text-xs font-bold -ml-1">10</span>
+                            </button>
+                            <span id="timeDisplay" class="text-xs md:text-sm font-medium text-gray-300 font-mono tracking-wider">
+                                0:00 / 0:00
+                            </span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <button id="fullScreenBtn" class="hover:text-brand-primary transition transform hover:scale-110 text-lg md:text-xl focus:outline-none" onclick="toggleFullScreen()" title="Fullscreen">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+
+        </div>
+
+        <style>
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: #389400; /* brand-primary */
+                cursor: pointer;
+                box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            }
+            input[type=range]::-moz-range-thumb {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: #389400;
+                cursor: pointer;
+                border: none;
+            }
+        </style>
+
+        <script>
+            const video = document.getElementById('pyfVideo');
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const bigPlayBtn = document.getElementById('bigPlayBtn');
+            const progressBar = document.getElementById('progressBar');
+            const timeDisplay = document.getElementById('timeDisplay');
+            const videoContainer = document.getElementById('videoContainer');
+            const fullScreenBtn = document.getElementById('fullScreenBtn');
+
+            // 1. Play / Pause Logic
+            function togglePlay() {
+                if (video.paused) {
+                    video.play();
+                    playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    bigPlayBtn.classList.add('opacity-0');
+                } else {
+                    video.pause();
+                    playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    bigPlayBtn.classList.remove('opacity-0');
+                }
+            }
+
+            // 2. Skip 10 Seconds Logic
+            function skip(amount) {
+                video.currentTime += amount;
+            }
+
+            // 3. Format Time (Seconds to M:SS)
+            function formatTime(seconds) {
+                const minutes = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+            }
+
+            // 4. Update Progress Bar & Time Display
+            video.addEventListener('timeupdate', () => {
+                // Update progress bar
+                const progress = (video.currentTime / video.duration) * 100;
+                progressBar.value = progress;
+                
+                // Update time text
+                if(!isNaN(video.duration)){
+                    timeDisplay.innerText = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+                }
+            });
+
+            // Set initial duration once metadata loads
+            video.addEventListener('loadedmetadata', () => {
+                timeDisplay.innerText = `0:00 / ${formatTime(video.duration)}`;
+            });
+
+            // 5. Seek Video when Progress Bar is dragged
+            progressBar.addEventListener('input', (e) => {
+                const seekTime = (e.target.value / 100) * video.duration;
+                video.currentTime = seekTime;
+            });
+
+            // 6. Fullscreen Logic
+            function toggleFullScreen() {
+                if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                    // Enter Fullscreen
+                    if (videoContainer.requestFullscreen) {
+                        videoContainer.requestFullscreen();
+                    } else if (videoContainer.webkitRequestFullscreen) { /* Safari */
+                        videoContainer.webkitRequestFullscreen();
+                    }
+                    fullScreenBtn.innerHTML = '<i class="fas fa-compress"></i>';
+                } else {
+                    // Exit Fullscreen
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.webkitExitFullscreen) { /* Safari */
+                        document.webkitExitFullscreen();
+                    }
+                    fullScreenBtn.innerHTML = '<i class="fas fa-expand"></i>';
+                }
+            }
+
+            // Fix button icon if user exits fullscreen using Esc key
+            document.addEventListener('fullscreenchange', updateFullscreenIcon);
+            document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+
+            function updateFullscreenIcon() {
+                if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                    fullScreenBtn.innerHTML = '<i class="fas fa-expand"></i>';
+                }
+            }
+        </script>
+    </section>
 
         <section class="pb-16 md:pb-24 bg-white">
             <div class="container mx-auto px-4 max-w-6xl">
