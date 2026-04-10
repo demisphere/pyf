@@ -591,7 +591,15 @@
     </script>
 
     <script type="text/javascript" id="pap_x2s6df8d" src="https://payyourselffirst.postaffiliatepro.com/scripts/ojyfma"></script>
-    <script type="text/javascript"> PostAffTracker.setAccountId('default1'); try { PostAffTracker.track(); } catch (err) { } 
+    <script type="text/javascript">
+        try {
+            PostAffTracker.setAccountId('default1');
+            PostAffTracker.executeOnResponseFinished.push(function() {
+                var visitorId = PostAffTracker.getVisitorId();
+                document.querySelectorAll("a[href*='buy.stripe.com']").forEach(function(element){element.href += "?client_reference_id=default1" + visitorId;});
+            });
+            PostAffTracker.track();
+        } catch (err) { } 
     </script>
 </body>
 </html>
